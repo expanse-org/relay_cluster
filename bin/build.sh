@@ -11,7 +11,7 @@ export GOPATH=/opt/loopring/go-src
 sudo cp -rf $WORK_DIR/src/bin/svc/* $SVC_DIR
 sudo chmod -R 755 $SVC_DIR
 
-SRC_DIR=$GOPATH/src/github.com/Loopring/relay-cluster
+SRC_DIR=$GOPATH/src/github.com/Hamzaahmed742/relay_cluster
 if [ ! -d $SRC_DIR ]; then
       sudo mkdir -p $SRC_DIR
 	  sudo chown -R ubuntu:ubuntu $GOPATH

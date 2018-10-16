@@ -179,7 +179,7 @@ For deploying an application for the first time, you need to connect your github
 
 * Repository name
 
-Enter `Loopring/relay-cluster`
+Enter `Hamzaahmed742/relay_cluster`
 
 * Submit id
 

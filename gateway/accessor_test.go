@@ -15,8 +15,8 @@ package gateway
 
 import (
 	"fmt"
-	"github.com/Loopring/relay-cluster/dao"
-	"github.com/Loopring/relay-cluster/test"
+	"github.com/Hamzaahmed742/relay_cluster/dao"
+	"github.com/Hamzaahmed742/relay_cluster/test"
 	"github.com/Loopring/relay-lib/eth/accessor"
 	"github.com/Loopring/relay-lib/eth/contract"
 	"github.com/Loopring/relay-lib/eth/loopringaccessor"

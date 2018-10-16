@@ -20,14 +20,14 @@ package test
 
 import (
 	"fmt"
-	"github.com/Loopring/relay-cluster/accountmanager"
-	"github.com/Loopring/relay-cluster/dao"
-	"github.com/Loopring/relay-cluster/node"
-	ordermanager "github.com/Loopring/relay-cluster/ordermanager/manager"
-	orderviewer "github.com/Loopring/relay-cluster/ordermanager/viewer"
-	//txmanager "github.com/Loopring/relay-cluster/txmanager/manager"
-	txviewer "github.com/Loopring/relay-cluster/txmanager/viewer"
-	"github.com/Loopring/relay-cluster/usermanager"
+	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
+	"github.com/Hamzaahmed742/relay_cluster/dao"
+	"github.com/Hamzaahmed742/relay_cluster/node"
+	ordermanager "github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
+	orderviewer "github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
+	//txmanager "github.com/Hamzaahmed742/relay_cluster/txmanager/manager"
+	txviewer "github.com/Hamzaahmed742/relay_cluster/txmanager/viewer"
+	"github.com/Hamzaahmed742/relay_cluster/usermanager"
 	"github.com/Loopring/relay-lib/cache"
 	"github.com/Loopring/relay-lib/crypto"
 	"github.com/Loopring/relay-lib/eth/abi"
@@ -66,7 +66,7 @@ type TestEntity struct {
 const (
 	Version      = "v1.5.1"
 	DebugFile    = "debug.toml"
-	KeystorePath = "/Users/fukun/projects/gohome/src/github.com/Loopring/relay-cluster/ks_dir"
+	KeystorePath = "/Users/fukun/projects/gohome/src/github.com/Hamzaahmed742/relay_cluster/ks_dir"
 )
 
 var (
@@ -82,7 +82,7 @@ var (
 )
 
 func init() {
-	Path = strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/Loopring/relay-cluster/config/" + DebugFile
+	Path = strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/Hamzaahmed742/relay_cluster/config/" + DebugFile
 
 	cfg = loadConfig()
 	util.Initialize(&cfg.Market)
@@ -138,7 +138,7 @@ func loadTestData() *TestEntity {
 		Auth            AuthKey
 	}
 
-	file := strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/Loopring/relay-cluster/test/testdata.toml"
+	file := strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/Hamzaahmed742/relay_cluster/test/testdata.toml"
 	io, err := os.Open(file)
 	if err != nil {
 		panic(err)

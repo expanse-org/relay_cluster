@@ -20,7 +20,7 @@ package viewer
 
 import (
 	"errors"
-	txtyp "github.com/Loopring/relay-cluster/txmanager/types"
+	txtyp "github.com/Hamzaahmed742/relay_cluster/txmanager/types"
 	"math/big"
 )
 

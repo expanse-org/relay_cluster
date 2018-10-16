@@ -19,8 +19,8 @@
 package viewer_test
 
 import (
-	"github.com/Loopring/relay-cluster/ordermanager/viewer"
-	"github.com/Loopring/relay-cluster/test"
+	"github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
+	"github.com/Hamzaahmed742/relay_cluster/test"
 	"github.com/Loopring/relay-lib/motan"
 	"github.com/Loopring/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
@@ -30,7 +30,7 @@ import (
 func TestOrderViewerImpl_MotanRpcServer(t *testing.T) {
 	serverInstance := &viewer.OrderViewerImpl{}
 	options := motan.MotanServerOptions{}
-	options.ConfFile = "/Users/fukun/projects/gohome/src/github.com/Loopring/relay-cluster/config/test-ordermanager.yaml"
+	options.ConfFile = "/Users/fukun/projects/gohome/src/github.com/Hamzaahmed742/relay_cluster/config/test-ordermanager.yaml"
 	options.ServerInstance = serverInstance
 	motan.RunServer(options)
 }

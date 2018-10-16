@@ -20,7 +20,7 @@ package accountmanager_test
 
 import (
 	"encoding/json"
-	"github.com/Loopring/relay-cluster/accountmanager"
+	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
 	"github.com/Loopring/relay-lib/cache"
 	"github.com/Loopring/relay-lib/cache/redis"
 	"github.com/Loopring/relay-lib/eth/accessor"
@@ -66,7 +66,7 @@ func init() {
 	loopringaccessor.InitLoopringAccessor(options)
 
 	utiloptions := marketutil.MarketOptions{}
-	utiloptions.TokenFile = "/Users/yuhongyu/Desktop/service/go/src/github.com/Loopring/relay-cluster/config/tokens.json"
+	utiloptions.TokenFile = "/Users/yuhongyu/Desktop/service/go/src/github.com/Hamzaahmed742/relay_cluster/config/tokens.json"
 	marketutil.Initialize(&utiloptions)
 
 	zklock.Initialize(zklock.ZkLockConfig{ZkServers: "127.0.0.1:2181", ConnectTimeOut: 10000})

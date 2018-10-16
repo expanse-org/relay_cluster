@@ -19,8 +19,8 @@
 package viewer_test
 
 import (
-	"github.com/Loopring/relay-cluster/test"
-	"github.com/Loopring/relay-cluster/txmanager/viewer"
+	"github.com/Hamzaahmed742/relay_cluster/test"
+	"github.com/Hamzaahmed742/relay_cluster/txmanager/viewer"
 	"math/big"
 	"testing"
 )

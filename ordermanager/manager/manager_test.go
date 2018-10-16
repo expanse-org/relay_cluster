@@ -19,8 +19,8 @@
 package manager_test
 
 import (
-	"github.com/Loopring/relay-cluster/ordermanager/manager"
-	"github.com/Loopring/relay-cluster/test"
+	"github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
+	"github.com/Hamzaahmed742/relay_cluster/test"
 	"github.com/Loopring/relay-lib/kafka"
 	util "github.com/Loopring/relay-lib/marketutil"
 	"github.com/Loopring/relay-lib/types"

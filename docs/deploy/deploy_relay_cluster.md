@@ -15,7 +15,7 @@ The basic configuration of the current relay is implemented through a static con
 
 * relay.toml
 
-Make the following necessary modifications based on `Loopring/relay-cluster/config/relay.toml`
+Make the following necessary modifications based on `Hamzaahmed742/relay_cluster/config/relay.toml`
 ```
     output_paths = ["/var/log/relay/zap.log"]
     error_output_paths = ["/var/log/relay/err.log"]
@@ -72,7 +72,7 @@ Make the following necessary modifications based on `Loopring/relay-cluster/conf
 
 * motan_server.yaml
 
-Make the following necessary modifications based on `Loopring/relay-cluster/config/motan_server.yaml`
+Make the following necessary modifications based on `Hamzaahmed742/relay_cluster/config/motan_server.yaml`
 ```
 log_dir: "/var/log/relay"
 ...

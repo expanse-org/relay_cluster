@@ -177,7 +177,7 @@ sudo service codedeploy-agent start
 
 * 存储库名称
 
-输入`Loopring/relay-cluster`
+输入`Hamzaahmed742/relay_cluster`
 
 * 提交id
 
