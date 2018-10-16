@@ -20,6 +20,7 @@ fi
 cd $SRC_DIR
 rm -rf ./*
 cp -r $WORK_DIR/src/* ./
+go get -u github.com/shopify/sarama
 go build -ldflags -s -v  -o build/bin/relay cmd/main.go
 echo "go build finished......."
 cp build/bin/relay $WORK_DIR/bin
