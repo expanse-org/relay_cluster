@@ -21,7 +21,7 @@ package kafka
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Shopify/sarama"
+	"github.com/shopify/sarama"
 )
 
 type MessageProducer struct {

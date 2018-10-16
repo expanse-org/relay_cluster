@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  name = "github.com/Shopify/sarama"
+  name = "github.com/shopify/sarama"
   packages = ["."]
   revision = "3b1b38866a79f06deddf0487d5c27ba0697ccd65"
   version = "v1.15.0"

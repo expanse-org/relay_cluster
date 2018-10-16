@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/bsm/sarama-cluster)](https://goreportcard.com/report/github.com/bsm/sarama-cluster)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Cluster extensions for [Sarama](https://github.com/Shopify/sarama), the Go client library for Apache Kafka 0.9 (and later).
+Cluster extensions for [Sarama](https://github.com/shopify/sarama), the Go client library for Apache Kafka 0.9 (and later).
 
 ## Documentation
 
