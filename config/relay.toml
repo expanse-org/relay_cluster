@@ -17,7 +17,7 @@ title = "miner"
 
 
 [mysql]
-    hostname = "34.229.208.195"
+    hostname = "34.227.69.137"
     port = "3306"
     user = "exploopr"
     password = "exploopr"
