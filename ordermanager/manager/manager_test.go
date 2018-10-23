@@ -19,8 +19,8 @@
 package manager_test
 
 import (
-	"github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
-	"github.com/Hamzaahmed742/relay_cluster/test"
+	"github.com/expanse-org/relay_cluster/ordermanager/manager"
+	"github.com/expanse-org/relay_cluster/test"
 	"github.com/expanse-org/relay-lib/kafka"
 	util "github.com/expanse-org/relay-lib/marketutil"
 	"github.com/expanse-org/relay-lib/types"

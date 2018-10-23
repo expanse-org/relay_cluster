@@ -20,14 +20,14 @@ package test
 
 import (
 	"fmt"
-	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
-	"github.com/Hamzaahmed742/relay_cluster/dao"
-	"github.com/Hamzaahmed742/relay_cluster/node"
-	ordermanager "github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
-	orderviewer "github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
-	//txmanager "github.com/Hamzaahmed742/relay_cluster/txmanager/manager"
-	txviewer "github.com/Hamzaahmed742/relay_cluster/txmanager/viewer"
-	"github.com/Hamzaahmed742/relay_cluster/usermanager"
+	"github.com/expanse-org/relay_cluster/accountmanager"
+	"github.com/expanse-org/relay_cluster/dao"
+	"github.com/expanse-org/relay_cluster/node"
+	ordermanager "github.com/expanse-org/relay_cluster/ordermanager/manager"
+	orderviewer "github.com/expanse-org/relay_cluster/ordermanager/viewer"
+	//txmanager "github.com/expanse-org/relay_cluster/txmanager/manager"
+	txviewer "github.com/expanse-org/relay_cluster/txmanager/viewer"
+	"github.com/expanse-org/relay_cluster/usermanager"
 	"github.com/expanse-org/relay-lib/cache"
 	"github.com/expanse-org/relay-lib/crypto"
 	"github.com/expanse-org/relay-lib/eth/abi"
@@ -66,7 +66,7 @@ type TestEntity struct {
 const (
 	Version      = "v1.5.1"
 	DebugFile    = "debug.toml"
-	KeystorePath = "/Users/fukun/projects/gohome/src/github.com/Hamzaahmed742/relay_cluster/ks_dir"
+	KeystorePath = "/Users/fukun/projects/gohome/src/github.com/expanse-org/relay_cluster/ks_dir"
 )
 
 var (
@@ -82,7 +82,7 @@ var (
 )
 
 func init() {
-	Path = strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/Hamzaahmed742/relay_cluster/config/" + DebugFile
+	Path = strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/expanse-org/relay_cluster/config/" + DebugFile
 
 	cfg = loadConfig()
 	util.Initialize(&cfg.Market)
@@ -138,7 +138,7 @@ func loadTestData() *TestEntity {
 		Auth            AuthKey
 	}
 
-	file := strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/Hamzaahmed742/relay_cluster/test/testdata.toml"
+	file := strings.TrimSuffix(os.Getenv("GOPATH"), "/") + "/src/github.com/expanse-org/relay_cluster/test/testdata.toml"
 	io, err := os.Open(file)
 	if err != nil {
 		panic(err)

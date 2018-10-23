@@ -19,9 +19,9 @@
 package gateway
 
 import (
-	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
-	"github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
-	"github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
+	"github.com/expanse-org/relay_cluster/accountmanager"
+	"github.com/expanse-org/relay_cluster/ordermanager/manager"
+	"github.com/expanse-org/relay_cluster/ordermanager/viewer"
 	"github.com/expanse-org/relay-lib/log"
 	"github.com/expanse-org/relay-lib/motan"
 	"math/big"

@@ -23,7 +23,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/Hamzaahmed742/relay_cluster/node"
+	"github.com/expanse-org/relay_cluster/node"
 	"github.com/expanse-org/relay-lib/log"
 	"github.com/expanse-org/relay-lib/params"
 	"gopkg.in/urfave/cli.v1"

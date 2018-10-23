@@ -19,11 +19,11 @@
 package manager
 
 import (
-	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
-	"github.com/Hamzaahmed742/relay_cluster/dao"
-	"github.com/Hamzaahmed742/relay_cluster/txmanager/cache"
-	txtyp "github.com/Hamzaahmed742/relay_cluster/txmanager/types"
-	notify "github.com/Hamzaahmed742/relay_cluster/util"
+	"github.com/expanse-org/relay_cluster/accountmanager"
+	"github.com/expanse-org/relay_cluster/dao"
+	"github.com/expanse-org/relay_cluster/txmanager/cache"
+	txtyp "github.com/expanse-org/relay_cluster/txmanager/types"
+	notify "github.com/expanse-org/relay_cluster/util"
 	"github.com/expanse-org/relay-lib/eth/contract"
 	"github.com/expanse-org/relay-lib/eventemitter"
 	"github.com/expanse-org/relay-lib/log"

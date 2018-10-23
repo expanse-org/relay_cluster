@@ -20,8 +20,8 @@ package manager
 
 import (
 	"fmt"
-	"github.com/Hamzaahmed742/relay_cluster/dao"
-	cm "github.com/Hamzaahmed742/relay_cluster/ordermanager/common"
+	"github.com/expanse-org/relay_cluster/dao"
+	cm "github.com/expanse-org/relay_cluster/ordermanager/common"
 	"github.com/expanse-org/relay-lib/log"
 	util "github.com/expanse-org/relay-lib/marketutil"
 	"github.com/expanse-org/relay-lib/types"

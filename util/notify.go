@@ -19,8 +19,8 @@
 package util
 
 import (
-	"github.com/Hamzaahmed742/relay_cluster/dao"
-	"github.com/Hamzaahmed742/relay_cluster/txmanager/types"
+	"github.com/expanse-org/relay_cluster/dao"
+	"github.com/expanse-org/relay_cluster/txmanager/types"
 	"github.com/expanse-org/relay-lib/kafka"
 	"github.com/expanse-org/relay-lib/log"
 	libTypes "github.com/expanse-org/relay-lib/types"

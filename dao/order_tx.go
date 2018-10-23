@@ -19,7 +19,7 @@
 package dao
 
 import (
-	omtyp "github.com/Hamzaahmed742/relay_cluster/ordermanager/types"
+	omtyp "github.com/expanse-org/relay_cluster/ordermanager/types"
 	"github.com/expanse-org/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
 )

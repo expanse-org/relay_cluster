@@ -19,8 +19,8 @@
 package cache
 
 //import (
-//	"github.com/Hamzaahmed742/relay_cluster/test"
-//	"github.com/Hamzaahmed742/relay_cluster/txmanager"
+//	"github.com/expanse-org/relay_cluster/test"
+//	"github.com/expanse-org/relay_cluster/txmanager"
 //	"testing"
 //)
 //

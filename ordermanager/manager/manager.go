@@ -19,9 +19,9 @@
 package manager
 
 import (
-	"github.com/Hamzaahmed742/relay_cluster/dao"
-	"github.com/Hamzaahmed742/relay_cluster/ordermanager/cache"
-	"github.com/Hamzaahmed742/relay_cluster/ordermanager/common"
+	"github.com/expanse-org/relay_cluster/dao"
+	"github.com/expanse-org/relay_cluster/ordermanager/cache"
+	"github.com/expanse-org/relay_cluster/ordermanager/common"
 	"github.com/expanse-org/relay-lib/eventemitter"
 	"github.com/expanse-org/relay-lib/log"
 	"github.com/expanse-org/relay-lib/marketcap"

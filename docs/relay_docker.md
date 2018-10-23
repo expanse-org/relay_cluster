@@ -11,7 +11,7 @@ create log&config dir
 ```bash
 mkdir your_log_path your_config_path
 ```
-config relay.toml，[reference](https://github.com/Hamzaahmed742/relay_cluster/wiki/%E9%83%A8%E7%BD%B2relay-cluster#%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+config relay.toml，[reference](https://github.com/expanse-org/relay_cluster/wiki/%E9%83%A8%E7%BD%B2relay-cluster#%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 
 before deployment, perform telnet tests according to the ports related to the configuration files mysql, redis, kafka, and zk to ensure that these dependencies can be accessed normally.
 

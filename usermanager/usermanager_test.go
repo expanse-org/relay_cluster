@@ -19,7 +19,7 @@
 package usermanager_test
 
 //import (
-//	"github.com/Hamzaahmed742/relay_cluster/test"
+//	"github.com/expanse-org/relay_cluster/test"
 //	"testing"
 //)
 //

@@ -18,7 +18,7 @@
 
 package cache
 
-import "github.com/Hamzaahmed742/relay_cluster/dao"
+import "github.com/expanse-org/relay_cluster/dao"
 
 var rds *dao.RdsService
 

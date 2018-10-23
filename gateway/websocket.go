@@ -21,8 +21,8 @@ package gateway
 
 import (
 	"fmt"
-	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
-	"github.com/Hamzaahmed742/relay_cluster/market"
+	"github.com/expanse-org/relay_cluster/accountmanager"
+	"github.com/expanse-org/relay_cluster/market"
 	"github.com/expanse-org/relay-lib/log"
 	"github.com/expanse-org/relay-lib/marketcap"
 	"github.com/gorilla/websocket"

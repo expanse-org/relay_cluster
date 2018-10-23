@@ -2,10 +2,10 @@ package gateway_test
 
 import (
 	"encoding/json"
-	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
-	"github.com/Hamzaahmed742/relay_cluster/gateway"
-	orderviewer "github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
-	"github.com/Hamzaahmed742/relay_cluster/test"
+	"github.com/expanse-org/relay_cluster/accountmanager"
+	"github.com/expanse-org/relay_cluster/gateway"
+	orderviewer "github.com/expanse-org/relay_cluster/ordermanager/viewer"
+	"github.com/expanse-org/relay_cluster/test"
 	"github.com/expanse-org/relay-lib/types"
 	"testing"
 	"time"

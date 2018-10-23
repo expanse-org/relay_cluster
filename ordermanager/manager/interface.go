@@ -19,8 +19,8 @@
 package manager
 
 import (
-	"github.com/Hamzaahmed742/relay_cluster/dao"
-	omcm "github.com/Hamzaahmed742/relay_cluster/ordermanager/common"
+	"github.com/expanse-org/relay_cluster/dao"
+	omcm "github.com/expanse-org/relay_cluster/ordermanager/common"
 	"github.com/expanse-org/relay-lib/marketcap"
 	"github.com/expanse-org/relay-lib/types"
 )
