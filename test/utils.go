@@ -420,7 +420,7 @@ func SetTokenBalances() {
 	//wethAmount, _ := new(big.Int).SetString("79992767978000000000", 0)
 
 	// deposit weth
-	//wethToken := entity.Tokens["WETH"]
+	//wethToken := entity.Tokens["WEXP"]
 	//for _, v := range entity.Accounts {
 	//	owner := accounts.Account{Address: v.Address}
 	//	sendTransactionMethod := ethaccessor.ContractSendTransactionMethod("latest", ethaccessor.WethAbi(), wethToken)
@@ -434,7 +434,7 @@ func SetTokenBalances() {
 
 	// other token set balance
 	for symbol, tokenAddress := range entity.Tokens {
-		if symbol == "WETH" {
+		if symbol == "WEXP" {
 			continue
 		}
 		sendTransactionMethod := accessor.ContractSendTransactionMethod("latest", dummyTokenAbi, tokenAddress)

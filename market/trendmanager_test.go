@@ -87,7 +87,7 @@ package market_test
 //	order.AmountS = big.NewInt(1000000)
 //	order.LrcFee = big.NewInt(500000000000000000)
 //	order.TokenS = util.AllTokens["RDN"].Protocol
-//	order.TokenB = util.AllTokens["WETH"].Protocol
+//	order.TokenB = util.AllTokens["WEXP"].Protocol
 //	amountS := big.NewInt(0)
 //	amountS.SetString("3800000000000000000", 10)
 //	order.AmountS = amountS
@@ -100,11 +100,11 @@ package market_test
 //
 //	fmt.Println(bf.Filter(&order))
 //
-//	//fmt.Println(tm.GetTrends("RDN-WETH", "1Hr"))
-//	//fmt.Println(tm.GetTrends("LRC-WETH", "1Hr"))
-//	//fmt.Println(tm.GetTrends("LRC-WETH", "2Hr"))
+//	//fmt.Println(tm.GetTrends("RDN-WEXP", "1Hr"))
+//	//fmt.Println(tm.GetTrends("LRC-WEXP", "1Hr"))
+//	//fmt.Println(tm.GetTrends("LRC-WEXP", "2Hr"))
 //	//fill := &types.OrderFilledEvent{}
-//	//fill.Market = "LRC-WETH"
+//	//fill.Market = "LRC-WEXP"
 //	//fill.TxInfo.Protocol = common.HexToAddress("0xC01172a87f6cC20E1E3b9aD13a9E715Fbc2D5AA9")
 //	//fill.Owner = common.HexToAddress("0x750aD4351bB728ceC7d639A9511F9D6488f1E259")
 //	//fill.RingIndex = big.NewInt(26)
@@ -132,7 +132,7 @@ package market_test
 //	//time.Sleep(3 * time.Second)
 //	////tm.InsertTrend()
 //	//fmt.Println("xxxxxxxxxxx")
-//	//tds, _ := tm.GetTrends("LRC-WETH", "2Hr")
+//	//tds, _ := tm.GetTrends("LRC-WEXP", "2Hr")
 //	//fmt.Println(tds)
 //	//fmt.Println(tm.GetTicker())
 //

@@ -503,8 +503,8 @@ func (w *WalletServiceImpl) GetPriceQuote(query PriceQuoteQuery) (result PriceQu
 		} else {
 			floatPrice, _ := price.Float64()
 			rst.Tokens = append(rst.Tokens, TokenPrice{k, floatPrice})
-			if k == "WETH" {
-				rst.Tokens = append(rst.Tokens, TokenPrice{"ETH", floatPrice})
+			if k == "WEXP" {
+				rst.Tokens = append(rst.Tokens, TokenPrice{"EXP", floatPrice})
 			}
 		}
 	}

@@ -105,8 +105,8 @@ func (e *ExchangeImpl) updateCache() {
 
 func mockUpdateCache() {
 	tickers := make([]Ticker, 0)
-	t1 := Ticker{Market: "LRC-WETH", Amount: 0.001}
-	t2 := Ticker{Market: "LRC-WETH", Amount: 0.003}
+	t1 := Ticker{Market: "LRC-WEXP", Amount: 0.001}
+	t2 := Ticker{Market: "LRC-WEXP", Amount: 0.003}
 	t3 := Ticker{Market: "FOO-BAR", Amount: 0.002}
 	tickers = append(tickers, t1)
 	tickers = append(tickers, t2)
@@ -170,7 +170,7 @@ func updateCacheByExchange(exchange string, getter func(mkt string) (ticker Tick
 		}
 
 		vv := strings.ToUpper(v)
-		vv = strings.Replace(vv, "WETH", "ETH", 1)
+		vv = strings.Replace(vv, "WEXP", "EXP", 1)
 		ticker, err := getter(vv)
 		if err != nil {
 			//log.Debug("get ticker error " + err.Error())
@@ -227,7 +227,7 @@ func NewCollector() *CollectorImpl {
 	rst := &CollectorImpl{exs: make([]ExchangeImpl, 0), syncInterval: defaultSyncInterval, cron: cron.New()}
 	rst.localCache = gocache.New(5*time.Second, 5*time.Minute)
 	for _, v := range util.AllMarkets {
-		if strings.HasSuffix(v, "ETH") {
+		if strings.HasSuffix(v, "EXP") {
 			supportedMarkets = append(supportedMarkets, v)
 		}
 	}
@@ -512,16 +512,16 @@ func GetAllTickerFromBinance() (tickers []Ticker, err error) {
 			tickers = make([]Ticker, 0)
 			for _, binanceTicker := range binanceTickers {
 
-				if !strings.HasSuffix(binanceTicker.Symbol, "ETH") {
+				if !strings.HasSuffix(binanceTicker.Symbol, "EXP") {
 					// only handle eth market tickers
 					continue
 				}
 
 				ticker := Ticker{}
 				//ticker.Market = market
-				marketPre := binanceTicker.Symbol[0 : len(binanceTicker.Symbol)-len("ETH")]
+				marketPre := binanceTicker.Symbol[0 : len(binanceTicker.Symbol)-len("EXP")]
 
-				ticker.Market = marketPre + "-" + "WETH"
+				ticker.Market = marketPre + "-" + "WEXP"
 				ticker.Amount, _ = strconv.ParseFloat(binanceTicker.Amount, 64)
 				ticker.Open, _ = strconv.ParseFloat(binanceTicker.Open, 64)
 				ticker.Close, _ = strconv.ParseFloat(binanceTicker.Close, 64)
@@ -627,7 +627,7 @@ func GetAllTickerFromOkex() (tickers []Ticker, err error) {
 				ticker := Ticker{}
 				okexMarket := strings.Replace(v.Symbol, "_", "-", 1)
 				okexMarket = strings.ToUpper(okexMarket)
-				okexMarket = strings.Replace(okexMarket, "ETH", "WETH", 1)
+				okexMarket = strings.Replace(okexMarket, "EXP", "WEXP", 1)
 				if stringInSlice(okexMarket, supportedMarkets) {
 					ticker.Market = okexMarket
 					ticker.Last, _ = strconv.ParseFloat(v.Last, 64)

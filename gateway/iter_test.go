@@ -37,7 +37,7 @@ func TestRing(t *testing.T) {
 	entity := test.Entity()
 
 	lrc := util.AllTokens["LRC"].Protocol
-	eth := util.AllTokens["WETH"].Protocol
+	eth := util.AllTokens["WEXP"].Protocol
 
 	account1 := entity.Accounts[0]
 	account2 := entity.Accounts[1]

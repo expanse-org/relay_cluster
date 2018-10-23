@@ -249,11 +249,11 @@ func TestGetPow(t *testing.T) {
 //
 //func TestWalletServiceImpl_GetPortfolio(t *testing.T) {
 //	//priceQuoteMap := make(map[string]*big.Rat)
-//	//priceQuoteMap["WETH"] = new(big.Rat).SetFloat64(4532.01)
+//	//priceQuoteMap["WEXP"] = new(big.Rat).SetFloat64(4532.01)
 //	//priceQuoteMap["RDN"] = new(big.Rat).SetFloat64(12.01)
 //	//priceQuoteMap["LRC"] = new(big.Rat).SetFloat64(2.32)
 //	//balances := make(map[string]market.Balance)
-//	//balances["WETH"] = market.Balance{Token:"WETH", Balance:types.HexToBigint("0x22")}
+//	//balances["WEXP"] = market.Balance{Token:"WEXP", Balance:types.HexToBigint("0x22")}
 //	//balances["LRC"] = market.Balance{Token:"LRC", Balance:types.HexToBigint("0x1")}
 //	//balances["RDN"] = market.Balance{Token:"RDN", Balance:types.HexToBigint("0x23")}
 //	//

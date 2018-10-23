@@ -37,7 +37,7 @@ var (
 	account1         = test.Entity().Accounts[0].Address
 	account2         = test.Entity().Accounts[1].Address
 	lrcTokenAddress  = util.AllTokens["LRC"].Protocol
-	wethTokenAddress = util.AllTokens["WETH"].Protocol
+	wethTokenAddress = util.AllTokens["WEXP"].Protocol
 	delegateAddress  = test.Delegate()
 	gas              = big.NewInt(200000)
 	gasPrice         = big.NewInt(21000000000)

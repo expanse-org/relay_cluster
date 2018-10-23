@@ -121,7 +121,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getBalance","params":{s
           "allowance": "0x0000001233a"
       },
       {
-          "token": "WETH",
+          "token": "WEXP",
           "balance": "0x00000012dae734",
           "allowance": "0x00000012aae734"
       }
@@ -214,7 +214,7 @@ Get loopring order list.
 - `orderHash` - The order hash.
 - `status` - order status enum string.(status collection is : ORDER_OPENED(include ORDER_NEW and ORDER_PARTIAL), ORDER_NEW, ORDER_PARTIAL, ORDER_FINISHED, ORDER_CANCEL, ORDER_CUTOFF)
 - `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
-- `market` - The market of the order.(format is LRC-WETH)
+- `market` - The market of the order.(format is LRC-WEXP)
 - `side` - The side of order. only support "buy" and "sell".
 - `orderType` - The type of order. only support "market_order" and "p2p_order", default is "market_order".
 - `pageIndex` - The page want to query, default is 1.
@@ -268,7 +268,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getOrders","params":{se
                  "address":"0x71C079107B5af8619D54537A93dbF16e5aab4900",
                  "hash":"0x52c90064a0503ce566a50876fc41e0d549bffd2ba757f859b1749a75be798819",
                  "tokenS":"LRC",
-                 "tokenB":"WETH",
+                 "tokenB":"WEXP",
                  "amountS":"0x1b1ae4d6e2ef500000",
                  "amountB":"0xde0b6b3a7640000",
                  "validSince":"0x5aefd848",
@@ -282,7 +282,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getOrders","params":{se
                  "walletAddress":"0xb94065482Ad64d4c2b9252358D746B39e820A582",
                  "authAddr":"0xEf04F928F89cFF2a86CB4C2086D2aDa7D3A29200",
                  "authPrivateKey":"0x94866e133eb0cc774ca09a9de59c4c671fee6f7e871104d5e14004ac46fcee2b",
-                 "market":"LRC-WETH",
+                 "market":"LRC-WEXP",
                  "side":"sell",
                  "createTime":1525667919
              },
@@ -343,7 +343,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getOrders","params":{se
          "address":"0x71C079107B5af8619D54537A93dbF16e5aab4900",
          "hash":"0x52c90064a0503ce566a50876fc41e0d549bffd2ba757f859b1749a75be798819",
          "tokenS":"LRC",
-         "tokenB":"WETH",
+         "tokenB":"WEXP",
          "amountS":"0x1b1ae4d6e2ef500000",
          "amountB":"0xde0b6b3a7640000",
          "validSince":"0x5aefd848",
@@ -357,7 +357,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getOrders","params":{se
          "walletAddress":"0xb94065482Ad64d4c2b9252358D746B39e820A582",
          "authAddr":"0xEf04F928F89cFF2a86CB4C2086D2aDa7D3A29200",
          "authPrivateKey":"0x94866e133eb0cc774ca09a9de59c4c671fee6f7e871104d5e14004ac46fcee2b",
-         "market":"LRC-WETH",
+         "market":"LRC-WEXP",
          "side":"sell",
          "createTime":1525667919
      },
@@ -385,7 +385,7 @@ Get depth and accuracy by token pair
 
 ```js
 params: [{
-  "market" : "LRC-WETH",
+  "market" : "LRC-WEXP",
   "delegateAddress": "0x5567ee920f7E62274284985D793344351A00142B",
   "length" : 10 // defalut is 50
 }]
@@ -415,7 +415,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getDepth","params":{see
         ["0.0008683300","900.0000000000","0.7814970000"],["0.0009000000","7750.0000000000","6.9750000000"],["0.0009053200","480.0000000000","0.4345536000"]
       ]
     },
-    "market" : "LRC-WETH",
+    "market" : "LRC-WEXP",
     "delegateAddress": "0x5567ee920f7E62274284985D793344351A00142B",
   }
 }
@@ -458,7 +458,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getTicker","params":[{s
   "jsonrpc": "2.0",
   "result": [{
     "exchange" : "",
-    "market":"EOS-WETH",
+    "market":"EOS-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -470,7 +470,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getTicker","params":[{s
   },
   {
     "exchange" : "",
-    "market":"LRC-WETH",
+    "market":"LRC-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -482,7 +482,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getTicker","params":[{s
   },
   {
     "exchange" : "",
-    "market":"RDN-WETH",
+    "market":"RDN-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -494,7 +494,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getTicker","params":[{s
   },
   {
     "exchange" : "",
-    "market":"SAN-WETH",
+    "market":"SAN-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -514,12 +514,12 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getTicker","params":[{s
 Get the info on all the 24hr merged tickers in the market from loopring relay.
 
 #### Parameters
-1. `market` - The market info like LRC-WETH.
+1. `market` - The market info like LRC-WEXP.
 
 
 ```js
 params: [{
-    "market" : "LRC-WETH"
+    "market" : "LRC-WEXP"
 }]
 ```
 
@@ -598,7 +598,7 @@ Get order fill history. This history consists of OrderFilled events.
 
 #### Parameters
 
-1. `market` - The market of the order.(format is LRC-WETH)
+1. `market` - The market of the order.(format is LRC-WEXP)
 2. `owner` - The address, if is null, will query all orders.
 3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 4. `orderHash` - The order hash.
@@ -608,7 +608,7 @@ Get order fill history. This history consists of OrderFilled events.
 
 ```js
 params: [{
-  "market" : "LRC-WETH",
+  "market" : "LRC-WEXP",
   "delegateAddress" : "0x5567ee920f7E62274284985D793344351A00142B",
   "owner" : "0x8888f1f195afa192cfee860698584c030f4c9db1",
   "orderHash" : "0xee0b482d9b704070c970df1e69297392a8bb73f4ed91213ae5c1725d4d1923fd",
@@ -664,13 +664,13 @@ curl -X GET --data '{"jsonrpc":"2.0","method":"loopring_getFills","params":{see 
           "orderHash":"0x2794f8e4d2940a2695c7ecc68e10e4f479b809601fa1d07f5b4ce03feec289d5",
           "amountS":"0xde0b6b3a7640000",
           "amountB":"0xde0b6b3a7640001",
-          "tokenS":"WETH",
+          "tokenS":"WEXP",
           "tokenB":"COSS",
           "lrcReward":"0xde0b6b3a7640000",
           "lrcFee":"0xde0b6b3a7640000",
           "splitS":"0xde0b6b3a7640000",
           "splitB":"0x0",
-          "market":"LRC-WETH"
+          "market":"LRC-WEXP"
       }
     ],
     "pageIndex" : 1,
@@ -692,7 +692,7 @@ Get trend info per market. If you select 1Hr interval, this function will return
 2. `interval` - The interval like 1Hr, 2Hr, 4Hr, 1Day, 1Week.
 
 ```js
-params: {"market" : "LRC-WETH", "interval" : "2Hr"}
+params: {"market" : "LRC-WEXP", "interval" : "2Hr"}
 
 ```
 
@@ -721,7 +721,7 @@ curl -X GET --data '{"jsonrpc":"2.0","method":"loopring_getTrend","params":{see 
   "result": {
     "data" : [
       {
-        "market" : "LRC-WETH",
+        "market" : "LRC-WEXP",
         "high" : 30384.2,
         "low" : 19283.2,
         "vol" : 1038,
@@ -868,7 +868,7 @@ curl -X GET --data '{"jsonrpc":"2.0","method":"loopring_getPriceQuote","params":
     "currency" : "CNY",
     "tokens" : [
         {
-          "token": "ETH",
+          "token": "EXP",
           "price": 31022.12 // hopeful price :)
         },
         {
@@ -894,7 +894,7 @@ Get the total frozen amount of all unfinished orders
 ```js
 params: [{
   "owner" : "0x8888f1f195afa192cfee860698584c030f4c9db1",
-  "token" : "WETH",
+  "token" : "WEXP",
   "delegateAddress" : "0x5567ee920f7E62274284985D793344351A00142B",
 }]
 ```
@@ -972,7 +972,7 @@ curl -X GET --data '{"jsonrpc":"2.0","method":"loopring_getSupportedMarket","par
 {
   "id":64,
   "jsonrpc": "2.0",
-  "result": ["SAN-WETH","GNO-WETH","RLC-WETH","AST-WETH"]
+  "result": ["SAN-WEXP","GNO-WEXP","RLC-WEXP","AST-WEXP"]
 }
 ```
 ***
@@ -1060,7 +1060,7 @@ Get user's latest transactions by owner.
 
 - `owner` - The owner address, must be applied.
 - `thxHash` - The transaction hash.
-- `symbol` - The token symbol like LRC,WETH.
+- `symbol` - The token symbol like LRC,WEXP.
 - `status` - The transaction status, enum is (pending|success|failed).
 - `txType` - The transaction type, enum is (send|receive|enable|convert).
 - `pageIndex` - The page want to query, default is 1.
@@ -1272,7 +1272,7 @@ get orderbook from relay. the difference of orderbook and depth is that orderboo
 
 ```js
 params: [{
-  "market" : "LRC-WETH",
+  "market" : "LRC-WEXP",
   "delegateAddress": "0x5567ee920f7E62274284985D793344351A00142B",
 }]
 ```
@@ -1295,7 +1295,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getUnmergedOrderBook","
 	"id": 0,
 	"result": {
 		"delegateAddress": "0x17233e07c67d086464fD408148c3ABB56245FA64",
-		"market": "LRC-WETH",
+		"market": "LRC-WEXP",
 		"buy": [{
 			"price": 0.00249499,
 			"size": 0.0002,
@@ -1624,7 +1624,7 @@ socketio.on("balance_res", function(data) {
           "allowance": "0x0000001233a"
       },
       {
-          "token": "WETH",
+          "token": "WEXP",
           "balance": "0x00000012dae734",
           "allowance": "0x00000012aae734"
       }
@@ -1675,7 +1675,7 @@ socketio.on("loopringTickers_res", function(data) {
 [
   {
     "exchange" : "",
-    "market" : "LRC-WETH",
+    "market" : "LRC-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -1687,7 +1687,7 @@ socketio.on("loopringTickers_res", function(data) {
   },
   {
     "exchange" : "",
-    "market" : "RDN-WETH",
+    "market" : "RDN-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -1698,7 +1698,7 @@ socketio.on("loopringTickers_res", function(data) {
     "change" : "-50.12%"
   },
   {
-    "market" : "ZRX-WETH",
+    "market" : "ZRX-WEXP",
     "exchange" : "",
     "high" : 30384.2,
     "low" : 19283.2,
@@ -1711,7 +1711,7 @@ socketio.on("loopringTickers_res", function(data) {
   },
   {
     "exchange" : "",
-    "market" : "AUX-WETH"
+    "market" : "AUX-WEXP"
     "high" : 30384.2,
     "low" : 19283.2,
     "last" : 28002.2,
@@ -1737,7 +1737,7 @@ Get 24hr merged tickers reference info from other exchange like binance, huobi.
 1. `market` - The market selected.
 
 ```js
-socketio.emit("tickers_req", '{"market" : "LRC-WETH"}', function(data) {
+socketio.emit("tickers_req", '{"market" : "LRC-WEXP"}', function(data) {
   // your business code
 });
 socketio.on("tickers_res", function(data) {
@@ -1760,7 +1760,7 @@ socketio.on("tickers_res", function(data) {
 ```js
 // Request
 
-{"market" : "LRC-WETH"}
+{"market" : "LRC-WEXP"}
 
 // Result
 {
@@ -1826,7 +1826,7 @@ push user's latest 20 transactions by owner.
 
 - `owner` - The owner address.
 - `thxHash` - The transaction hash.
-- `symbol` - The token symbol, like LRC, WETH....
+- `symbol` - The token symbol, like LRC, WEXP....
 - `status` - The transaction status enum(pending, success, failed).
 - `txType` - The transaction type(approve, send, receive, convert...).
 - `pageIndex` - The pageIndex.
@@ -1865,7 +1865,7 @@ socketio.on("transaction_res", function(data) {
 params: {
   "owner" : "0x847983c3a34afa192cfee860698584c030f4c9db1",
   "thxHash" : "0x2794f8e4d2940a2695c7ecc68e10e4f479b809601fa1d07f5b4ce03feec289d5",
-  "symbol" : "WETH",
+  "symbol" : "WEXP",
   "status" : "pending",
   "txType" : "receive",
   "pageIndex" : 1,
@@ -1928,7 +1928,7 @@ socketio.on("marketcap_res", function(data) {
     "currency" : "CNY",
     "tokens" : [
         {
-          "token": "ETH",
+          "token": "EXP",
           "price": 31022.12 // hopeful price :)
         },
         {
@@ -1976,7 +1976,7 @@ socketio.on("depth_res", function(data) {
 ```js
 // Request
 {
-  "market" : "LRC-WETH",
+  "market" : "LRC-WEXP",
   "delegateAddress" : "0x5567ee920f7E62274284985D793344351A00142B",
   "length" : 10 // defalut is 50
 }
@@ -1991,7 +1991,7 @@ socketio.on("depth_res", function(data) {
         ["0.0008683300","900.0000000000","0.7814970000"],["0.0009000000","7750.0000000000","6.9750000000"],["0.0009053200","480.0000000000","0.4345536000"]
       ]
     },
-    "market" : "LRC-WETH",
+    "market" : "LRC-WEXP",
     "delegateAddress" : "0x5567ee920f7E62274284985D793344351A00142B",
   }
 }
@@ -2013,7 +2013,7 @@ Get trend info per market.
 1. `market` - The market type.
 2. `interval` - The interval like 1Hr, 2Hr, 4Hr, 1Day, 1Week default is 1Hr.
 ```js
-params: {"market" : "LRC-WETH", "interval" : "1Hr"}
+params: {"market" : "LRC-WEXP", "interval" : "1Hr"}
 
 ```
 
@@ -2033,13 +2033,13 @@ params: {"market" : "LRC-WETH", "interval" : "1Hr"}
 #### Example
 ```js
 // Request
-{"market" : "LRC-WETH", "interval" : "4hr"}
+{"market" : "LRC-WEXP", "interval" : "4hr"}
 
 
 // Result
 [
   {
-    "market" : "LRC-WETH",
+    "market" : "LRC-WEXP",
     "high" : 30384.2,
     "low" : 19283.2,
     "vol" : 1038,
@@ -2171,7 +2171,7 @@ params: {
 // Result
 {
 		"delegateAddress": "0x17233e07c67d086464fD408148c3ABB56245FA64",
-		"market": "LRC-WETH",
+		"market": "LRC-WEXP",
 		"buy": [{
 			"price": 0.00249499,
 			"size": 0.0002,
@@ -2243,12 +2243,12 @@ emit with `_req` postfix and listen on `_res` postfix with the event key.
 
 #### Parameters
 
-1. `market` - The market of the order.(format is LRC-WETH)
+1. `market` - The market of the order.(format is LRC-WEXP)
 2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `side` - The market side, buy or sell.
 
 ```js
-params: {"market" : "LRC-WETH"}
+params: {"market" : "LRC-WEXP"}
 
 ```
 
@@ -2280,7 +2280,7 @@ socketio.on("trades_res", function(data) {
 ```js
 // Request
 params: {
-  "market" : "LRC-WETH",
+  "market" : "LRC-WEXP",
   "delegateAddress" : "0x17233e07c67d086464fD408148c3ABB56245FA64",
 }
 
@@ -2318,13 +2318,13 @@ emit with `_req` postfix and listen on `_res` postfix with the event key.
 
 #### Parameters
 
-1. `market` - The market of the order.(format is LRC-WETH)
+1. `market` - The market of the order.(format is LRC-WEXP)
 2. `owner` - The owner address.
 3. `orderType` - The type of order, market_order | p2p_order.
 
 ```js
 params: {
-    "market" : "LRC-WETH",
+    "market" : "LRC-WEXP",
     "owner" : "0xA64B16a18885F00FA1AD6D3d3100C3E6F1CEf724",
     "orderType" : "market_order",
 }
@@ -2352,7 +2352,7 @@ socketio.on("orders_res", function(data) {
 ```js
 // Request
 params: {
-  "market" : "LRC-WETH",
+  "market" : "LRC-WEXP",
   "owner" : "0x17233e07c67d086464fD408148c3ABB56245FA64",
 }
 
@@ -2363,7 +2363,7 @@ params: {
 		"delegateAddress": "0x17233e07c67d086464fD408148c3ABB56245FA64",
 		"address": "0xA8E6dd605136cEEfC9daCEBE56E24d6aBb5B01d7",
 		"hash": "0xcf4bd90ef91404aa020302f869cbbacc366ed868ba35c898bb1d77e526b49d72",
-		"tokenS": "WETH",
+		"tokenS": "WEXP",
 		"tokenB": "LRC",
 		"amountS": "0x43a1349385ba400",
 		"amountB": "0x1741922b0f82940000",
@@ -2378,7 +2378,7 @@ params: {
 		"walletAddress": "0xA8E6dd605136cEEfC9daCEBE56E24d6aBb5B01d7",
 		"authAddr": "0x787B3C4c4B19209A20bD11ebcf279B64708F32ae",
 		"authPrivateKey": "0xf5c1b07141a5198446bd73c1305ae6c07499866e52614ca1e31a04bdfac7a7ce",
-		"market": "LRC-WETH",
+		"market": "LRC-WEXP",
 		"side": "buy",
 		"createTime": 1529409888,
 		"orderType": "market_order"
@@ -2395,7 +2395,7 @@ params: {
 		"address": "0x2E9f19B096069c2d93Dbc6FF3911f4e5ca0f6dD9",
 		"hash": "0xd7bd822326c14b73f80bc5e365b290fccd1cfd4f186fa2caf82563b9046e5300",
 		"tokenS": "LRC",
-		"tokenB": "WETH",
+		"tokenB": "WEXP",
 		"amountS": "0x1741922b0f82940000",
 		"amountB": "0x48df284c99c9000",
 		"validSince": "0x5b28f15d",
@@ -2409,7 +2409,7 @@ params: {
 		"walletAddress": "0x2E9f19B096069c2d93Dbc6FF3911f4e5ca0f6dD9",
 		"authAddr": "0x52b9BB323132241aC4973a6D918a01E90Ab690b5",
 		"authPrivateKey": "0x3d8ccf6eea7717f12215d2f60fe585dc3587a88ea12bcdf375659ac882f6d1e8",
-		"market": "LRC-WETH",
+		"market": "LRC-WEXP",
 		"side": "sell",
 		"createTime": 1529409887,
 		"orderType": "market_order"

@@ -60,7 +60,7 @@ Loopring Relay(中文名:中继)是路印技术生态重要组成部分，集中
 订单 | ValidSince | 订单生效开始时间，表示单位为时间戳，如果当前时间小于ValidSince，订单是未生效状态。
 订单 | ValidUntil | 订单有效截止时间，表示单位为时间戳，超过后订单自动失效。
 订单 | LrcFee | 设置该笔订单撮合需要的LrcFee
-订单 | buyNoMoreThanAmountB | 表示是否允许购买超过amountB数量的tokeB，比如当前市场卖价(LRC-WETH)是0.001，用户下单价格是0.002买入100个（需要0.2个WETH），如果buyNoMoreThanAmountB=true，那最终用户会以0.001的价格（不考虑撮合收益）购买到100个LRC，消耗0.1个WETH；如果buyNoMoreThanAmountB=false，那最终用户会消耗掉所有的WETH（0.2个）以0.001的价格（不考虑撮合收益）购买到200个LRC。
+订单 | buyNoMoreThanAmountB | 表示是否允许购买超过amountB数量的tokeB，比如当前市场卖价(LRC-WEXP)是0.001，用户下单价格是0.002买入100个（需要0.2个WETH），如果buyNoMoreThanAmountB=true，那最终用户会以0.001的价格（不考虑撮合收益）购买到100个LRC，消耗0.1个WETH；如果buyNoMoreThanAmountB=false，那最终用户会消耗掉所有的WETH（0.2个）以0.001的价格（不考虑撮合收益）购买到200个LRC。
 订单 | marginSplitPercentage | 撮合分润中用来支付撮合费的比例，通常默认是50%。
 订单 | v, r, s | 订单签名的结果，是首先采用Keccak256算法对订单部分字段生成OrderHash, 再针对Hash做ECDSA签名，生成的结果。
 订单 | powNonce | 订单提交工作量证明，为了防止订单子系统被spam，我们采用工作量证明的方式来限制过多的订单提交，powNonce参与工作量证明算法计算，订单通过工作量证明校验后，提交到Relay，我们会以相同的工作量证明算法来校验nonce是否通过了工作量证明。
@@ -69,7 +69,7 @@ Loopring Relay(中文名:中继)是路印技术生态重要组成部分，集中
 订单 | 软取消 | 在Loopr2版本的钱包中，用户取消订单只能提交到智能合约，不仅花费油费，而且不能即时取消。所以我们在Relay中增加了软取消功能，在满足软取消情况(比如订单未撮合或者未在撮合流程中)下，可以通过Relay取消订单，不消耗油费并且即时取消订单。
 账户 | Allowance | 代币授权，这里通常指的是用户授权给Loopring protocol，想要Loopring智能合约能够撮合用户订单，只有用户针对合约做授权操作后，Loopring智能合约才能够撮合用户订单。
 账户 | Balance | 用户资产余额，包含ETH余额和所有ERC20 Token余额。
-账户 | WETH | WETH是以太坊上锚定ETH的ERC20 Token，在没有任何额外费(除了一笔transaction油费)用情况下，永远可以和ETH等量交换，Loopring合约只支持ERC20 Token之间资产交换，并不支持ETH和ERC20 Token交换，所以在用户交易前，需要将ETH转换成WETH，同时授权Loopring合约使用WETH Token.
+账户 | WEXP | WETH是以太坊上锚定ETH的ERC20 Token，在没有任何额外费(除了一笔transaction油费)用情况下，永远可以和ETH等量交换，Loopring合约只支持ERC20 Token之间资产交换，并不支持ETH和ERC20 Token交换，所以在用户交易前，需要将ETH转换成WETH，同时授权Loopring合约使用WETH Token.
 市场 | Fill | 成交信息，环路撮合后，智能合约发出的成交数据Event
 市场 | Depth | 市场深度
 市场 | Ticker | 24小时市场变化统计数据
@@ -250,7 +250,7 @@ ipfs & gateway - 消息广播的配置，消息广播代码已经被注释，可
 accessor       - 以太坊网络节点url， 数组，可以支持同时访问多个
 extractor.start_block_number   - 中继启动时从哪个块开始处理，建议第一次启动时，改成最新的块，减少不必要的块同步
 extractor.confirm_block_number - 经过多少个块确认后，extractor才真正将transaction消息事件发出去供其他模块消费， 这里最好是1
-common abi     - 包含ERC20标准ABI，WETH ABI以及Loopring合约ABI配置，如果是链接主网，可以不用修改
+common abi     - 包含ERC20标准ABI，WEXP ABI以及Loopring合约ABI配置，如果是链接主网，可以不用修改
 gateway filter - 用来配置提交订单各种校验规则
 miner          - 以miner模式启动时，配置挖矿参数
 ```

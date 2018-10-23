@@ -54,7 +54,7 @@ func TestNewOrderEntity(t *testing.T) {
 	entity := test.Entity()
 
 	lrc := util.AllTokens["LRC"].Protocol
-	eth := util.AllTokens["WETH"].Protocol
+	eth := util.AllTokens["WEXP"].Protocol
 
 	account := entity.Accounts[0]
 

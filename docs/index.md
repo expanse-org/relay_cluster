@@ -66,7 +66,7 @@ Loopring Relay is an important part of Loopring’s technology and ecosystem. It
 | Order | ValidSince | The effective time of the order, indicated by the timestamp on the order. If the current time is less than ValidSince, the order is not in effect. |
 | Order | ValidUntil | The expiration time of the order indicated by the timestamp on the order. If the time is greater than ValidUntil, the order will become invalid |
 | Order | LrcFee | Set LRC Fee for this order |
-| Order | buyNoMoreThanAmountB | Determines whether to allow the purchase of amountB of tokenB based on an excess amount. Say the current market price (LRC-WETH) is .0001, and the user sets an order to buy 100 at .0002 (requiring 0.2 WETH), if buyNoMoreThanAmountB = true, then the end user will buy 100 LRC at a price of .0001 (regardless of their intended gain) |
+| Order | buyNoMoreThanAmountB | Determines whether to allow the purchase of amountB of tokenB based on an excess amount. Say the current market price (LRC-WEXP) is .0001, and the user sets an order to buy 100 at .0002 (requiring 0.2 WEXP), if buyNoMoreThanAmountB = true, then the end user will buy 100 LRC at a price of .0001 (regardless of their intended gain) |
 | Order | marginSplitPercentage | The percentage used to pay for the completion and mining of the order, usually defaulting to 50% |
 | Order | v, r, s | To get the result of order signing, first you must generate OrderHash using the Keccak256 algorithm for part of the order, then do an ECDSA signature for a Hash and generate the result. |
 | Order | powNonce | We use proof of work when submitting an order, which limits excessive order submissions to prevent the order subsystem from being spammed. powNonce uses the workload proof algorithm calculation to verify if the nonce passes the proof of work, then the order is verified and submitted to the Relay. |
@@ -74,8 +74,8 @@ Loopring Relay is an important part of Loopring’s technology and ecosystem. It
 | Order | Ring | Differing from the traditional exchange order, Loopring’s approach forms a ring-shaped order that can allow a transfer between multiple coins and parties.The ring is formed when an order is started. |
 | Order | Partial cancellation | In the Loopr2 version of the wallet, the user cancels the order and it is submitted to the smart contract. This costs fuel and can not be immediately cancelled. Because of this, we have added a partial cancellation function to the relay. When partial cancellation requirements have been met, (for example, the order has not settled yet or is not in the process of being settled) the order can be cancelled off-chain through the relay immediately and without any fuel costs. |
 | Account | Allowance | This is token authorization, which usually refers to an authorized user of Loopring Protocol, that wants to use Loopring to match user orders. This user can only use the smart contract for the authorized operation, and the Loopring smart contract can then settle the user’s order. |
-| Account | Balance | The balance of the user's assets contains the ETH balance and all ERC20 Token balances. |
-| Account | WETH | WETH is an ERC20 Token anchored by Ethereum on ETH that  can always exchange equal amounts of ETH without any extra charge (except for the transaction cost). Loopring only supports the exchange of assets between ERC20 tokens, but does not support the exchange of ETH and ERC20, so before a user exchanges, their coins must be changed from ETH to WETH, which simultaneously authorizes the Loopring smart contract to use WETH. |
+| Account | Balance | The balance of the user's assets contains the EXP balance and all ERC20 Token balances. |
+| Account | WEXP | WEXP is an ERC20 Token anchored by Ethereum on EXP that  can always exchange equal amounts of EXP without any extra charge (except for the transaction cost). Loopring only supports the exchange of assets between ERC20 tokens, but does not support the exchange of EXP and ERC20, so before a user exchanges, their coins must be changed from EXP to WEXP, which simultaneously authorizes the Loopring smart contract to use WEXP. |
 | Market | Fill | The information and data for the transaction, sent out after the event of the smart contract settling the transaction. |
 | Market | Depth | The depth of the market |
 | Market | Ticker | 24-hour statistics on the changing of the market |
@@ -175,7 +175,7 @@ We provide a multi-dimensional query interface for orders, in addition to the mo
 
 ### Account Management
 
-This is the user's Ethereum wallet address account, we support a series of write operations for the wallet address: transfer/authorization/WETH conversion, etc., transmit the user account balance to the in-memory database, and update the user account balance in real-time. The Relay centrally maintains the user's latest nonce and ensures the highest accuracy, while the nonce provided by the Relay can minimize the failure rate of the user's Ethereum activity. Account management also maintains all transaction records of the user to help the user understand their activity details.
+This is the user's Ethereum wallet address account, we support a series of write operations for the wallet address: transfer/authorization/WEXP conversion, etc., transmit the user account balance to the in-memory database, and update the user account balance in real-time. The Relay centrally maintains the user's latest nonce and ensures the highest accuracy, while the nonce provided by the Relay can minimize the failure rate of the user's Ethereum activity. Account management also maintains all transaction records of the user to help the user understand their activity details.
 
 ---
 
@@ -270,7 +270,7 @@ ipfs & gateway - The configuration of the message broadcast, which has been anno
 accessor       - Ethereum network node url, an array that can support multi-access simultaneously
 extractor.start_block_number   - Which block to start processing when the relay starts, it is recommended to change to the latest block when starting the first time, reducing unnecessary block synchronization
 extractor.confirm_block_number - After a certain number of blocks are confirmed, the extractor sends the transaction message for use by other modules.
-common abi     - Contains ERC20 standard ABI, WETH ABI and Loopring contract ABI configuration, if it is linked to the main network, you will not be able to modify
+common abi     - Contains ERC20 standard ABI, WEXP ABI and Loopring contract ABI configuration, if it is linked to the main network, you will not be able to modify
 gateway filter - Used to configure various validation rules for submitting orders
 miner          - When mining in miner mode, configure mining parameters
 ```

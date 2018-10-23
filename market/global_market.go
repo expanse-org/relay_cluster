@@ -219,8 +219,8 @@ func getAllTokenField(token string) [][]byte {
 
 	fields := [][]byte{}
 
-	if strings.ToUpper(token) == "ETH" {
-		token = "WETH"
+	if strings.ToUpper(token) == "EXP" {
+		token = "WEXP"
 	}
 
 	_, ok := util.AllTokens[token]
@@ -318,7 +318,7 @@ func (g *GlobalMarket) GetGlobalMarketTicker(symbol string) (trend []GlobalMarke
 	}
 	nameId := token.Source
 	var request GlobalMarketTickerReq
-	if strings.ToUpper(symbol) == "ETH" || strings.ToUpper(symbol) == "WETH" {
+	if strings.ToUpper(symbol) == "EXP" || strings.ToUpper(symbol) == "WEXP" {
 		request = GlobalMarketTickerReq{NameId: "ethereum", Anchor: "usd", Symbol: "eth", SortType: "desc", SortField: "volume_24h_usd"}
 	} else {
 		request = GlobalMarketTickerReq{NameId: nameId, Anchor: "eth", Symbol: strings.ToLower(token.Symbol), SortType: "desc", SortField: "volume_24h_usd"}

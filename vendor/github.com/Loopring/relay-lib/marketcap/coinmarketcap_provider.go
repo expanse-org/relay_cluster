@@ -146,7 +146,7 @@ func (p *CapProvider_CoinMarketCap) LegalCurrencyValue(tokenAddress common.Addre
 }
 
 func (p *CapProvider_CoinMarketCap) LegalCurrencyValueOfEth(amount *big.Rat) (*big.Rat, error) {
-	tokenAddress := util.AllTokens["WETH"].Protocol
+	tokenAddress := util.AllTokens["WEXP"].Protocol
 	return p.LegalCurrencyValueByCurrency(tokenAddress, amount, p.currency)
 }
 
@@ -172,7 +172,7 @@ func (p *CapProvider_CoinMarketCap) GetMarketCap(tokenAddress common.Address) (*
 }
 
 func (p *CapProvider_CoinMarketCap) GetEthCap() (*big.Rat, error) {
-	return p.GetMarketCapByCurrency(util.AllTokens["WETH"].Protocol, p.currency)
+	return p.GetMarketCapByCurrency(util.AllTokens["WEXP"].Protocol, p.currency)
 }
 
 func (p *CapProvider_CoinMarketCap) getMarketCapFromRedis(websiteSlug string, currencyStr string) (cap *CoinMarketCap, err error) {
@@ -197,7 +197,7 @@ func (p *CapProvider_CoinMarketCap) GetMarketCapByCurrency(tokenAddress common.A
 			v = quote.Price
 		} else {
 			if p.notSupportTokens.contains(tokenAddress) {
-				wethCap, err := p.getMarketCapFromRedis(util.AllTokens["WETH"].Source, currencyStr)
+				wethCap, err := p.getMarketCapFromRedis(util.AllTokens["WEXP"].Source, currencyStr)
 				if nil == err {
 					if quote, exists := wethCap.Quotes[currencyStr]; exists {
 						v = new(big.Rat).Set(quote.Price)
@@ -397,7 +397,7 @@ func (p *CapProvider_CoinMarketCap) syncMarketCapFromRedis() error {
 		}
 	}
 
-	wethAddress := util.AllTokens["WETH"].Protocol
+	wethAddress := util.AllTokens["WEXP"].Protocol
 
 	for currency, wethCap := range p.tokenMarketCaps[wethAddress].Quotes {
 		for _, tokenAddr := range p.notSupportTokens {
