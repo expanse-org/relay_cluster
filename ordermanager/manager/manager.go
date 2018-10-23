@@ -22,10 +22,10 @@ import (
 	"github.com/Hamzaahmed742/relay_cluster/dao"
 	"github.com/Hamzaahmed742/relay_cluster/ordermanager/cache"
 	"github.com/Hamzaahmed742/relay_cluster/ordermanager/common"
-	"github.com/Loopring/relay-lib/eventemitter"
-	"github.com/Loopring/relay-lib/log"
-	"github.com/Loopring/relay-lib/marketcap"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/eventemitter"
+	"github.com/expanse-org/relay-lib/log"
+	"github.com/expanse-org/relay-lib/marketcap"
+	"github.com/expanse-org/relay-lib/types"
 )
 
 type OrderManager interface {

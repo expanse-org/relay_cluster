@@ -19,7 +19,7 @@
 package marketcap
 
 import (
-	"github.com/Loopring/relay-lib/zklock"
+	"github.com/expanse-org/relay-lib/zklock"
 	"io/ioutil"
 	"math/big"
 	"strings"
@@ -28,12 +28,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Loopring/relay-lib/cache"
-	"github.com/Loopring/relay-lib/cloudwatch"
-	"github.com/Loopring/relay-lib/log"
-	util "github.com/Loopring/relay-lib/marketutil"
-	"github.com/Loopring/relay-lib/sns"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/cache"
+	"github.com/expanse-org/relay-lib/cloudwatch"
+	"github.com/expanse-org/relay-lib/log"
+	util "github.com/expanse-org/relay-lib/marketutil"
+	"github.com/expanse-org/relay-lib/sns"
+	"github.com/expanse-org/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
 	"net/http"
 )

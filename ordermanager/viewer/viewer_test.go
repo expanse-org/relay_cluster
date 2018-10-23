@@ -21,8 +21,8 @@ package viewer_test
 import (
 	"github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
 	"github.com/Hamzaahmed742/relay_cluster/test"
-	"github.com/Loopring/relay-lib/motan"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/motan"
+	"github.com/expanse-org/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
 	"testing"
 )

@@ -20,7 +20,7 @@ package broadcast
 
 import (
 	"errors"
-	"github.com/Loopring/relay-lib/log"
+	"github.com/expanse-org/relay-lib/log"
 	"time"
 )
 

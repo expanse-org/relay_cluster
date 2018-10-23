@@ -4,535 +4,535 @@
 	"package": [
 		{
 			"checksumSHA1": "Zr9xrnXrUilJ8jmpELzYX6B+U7o=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go",
-			"path": "github.com/Loopring/motan-go",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go",
+			"path": "github.com/expanse-org/motan-go",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Km3VVgNIGr6XnBwRXVMJff3MLgY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/cluster",
-			"path": "github.com/Loopring/motan-go/cluster",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/cluster",
+			"path": "github.com/expanse-org/motan-go/cluster",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "tQyJp86qNbUC42O45iGzhi3Sfas=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/config",
-			"path": "github.com/Loopring/motan-go/config",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/config",
+			"path": "github.com/expanse-org/motan-go/config",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Cwl0S1t7hP7Ht2t3tEIEMC3gyZQ=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/core",
-			"path": "github.com/Loopring/motan-go/core",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/core",
+			"path": "github.com/expanse-org/motan-go/core",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "aKDRba8vXcM4pZfHRG5ljhI65AI=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/endpoint",
-			"path": "github.com/Loopring/motan-go/endpoint",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/endpoint",
+			"path": "github.com/expanse-org/motan-go/endpoint",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Ixmz9PRhKcCjUaJsrd7wgXCtlYA=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/filter",
-			"path": "github.com/Loopring/motan-go/filter",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/filter",
+			"path": "github.com/expanse-org/motan-go/filter",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "tQ2w8WONF4kxDdVTm1hQwIpez2M=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/ha",
-			"path": "github.com/Loopring/motan-go/ha",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/ha",
+			"path": "github.com/expanse-org/motan-go/ha",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "W2YWnQMojgx60XAd/DfhW0o+svg=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/lb",
-			"path": "github.com/Loopring/motan-go/lb",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/lb",
+			"path": "github.com/expanse-org/motan-go/lb",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "fW9W5se5LRTO9E259tQUUBFRpnQ=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/log",
-			"path": "github.com/Loopring/motan-go/log",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/log",
+			"path": "github.com/expanse-org/motan-go/log",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "6JTReUzVBniuoqphlfePYCuO4x4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/metrics",
-			"path": "github.com/Loopring/motan-go/metrics",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/metrics",
+			"path": "github.com/expanse-org/motan-go/metrics",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "5TZALxWb+ZYXrUFCnR6Uf+CGvTc=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/protocol",
-			"path": "github.com/Loopring/motan-go/protocol",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/protocol",
+			"path": "github.com/expanse-org/motan-go/protocol",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "8Ag9SilEVl4Ua22ok0FngbCp82I=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/provider",
-			"path": "github.com/Loopring/motan-go/provider",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/provider",
+			"path": "github.com/expanse-org/motan-go/provider",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "M7z4fUZgMUW1+wT+cdCGA2r5oD0=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/registry",
-			"path": "github.com/Loopring/motan-go/registry",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/registry",
+			"path": "github.com/expanse-org/motan-go/registry",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "GPyqjx2UTRqWlMuB13ICfAoBXpg=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/serialize",
-			"path": "github.com/Loopring/motan-go/serialize",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/serialize",
+			"path": "github.com/expanse-org/motan-go/serialize",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "XeGQc4PBuYuP2tlSVltzdjDkJa4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/Loopring/motan-go/server",
-			"path": "github.com/Loopring/motan-go/server",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/expanse-org/motan-go/server",
+			"path": "github.com/expanse-org/motan-go/server",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "e+VILnirb/o3xqxotku07Bmj+f4=",
-			"path": "github.com/Loopring/relay-lib/broadcast",
+			"path": "github.com/expanse-org/relay-lib/broadcast",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "VeK/WqUOkqNbCgVTrEekXzdZk1g=",
-			"path": "github.com/Loopring/relay-lib/broadcast/matrix",
+			"path": "github.com/expanse-org/relay-lib/broadcast/matrix",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "S7XTs/kDwi8CTUEsecb0d4L8Ku4=",
-			"path": "github.com/Loopring/relay-lib/cache",
+			"path": "github.com/expanse-org/relay-lib/cache",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "XMij5Ne/f+B5xc1SU2oll/t500I=",
-			"path": "github.com/Loopring/relay-lib/cache/redis",
+			"path": "github.com/expanse-org/relay-lib/cache/redis",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "RM1gCSUrhZR0F+gidnh74RkSEo8=",
-			"path": "github.com/Loopring/relay-lib/cloudwatch",
+			"path": "github.com/expanse-org/relay-lib/cloudwatch",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "gf49Dx4JoaGzqJICZ4e6ESrxtvE=",
-			"path": "github.com/Loopring/relay-lib/crypto",
+			"path": "github.com/expanse-org/relay-lib/crypto",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "de/5ziz80Z6TRDYC7XFZCLwLPJY=",
-			"path": "github.com/Loopring/relay-lib/dao",
+			"path": "github.com/expanse-org/relay-lib/dao",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "b7xERWBh2xhuMYU+LDarMHPIEWE=",
-			"path": "github.com/Loopring/relay-lib/eth/abi",
+			"path": "github.com/expanse-org/relay-lib/eth/abi",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "i5LFchvvndje/JtIX9n6sYl0fnk=",
-			"path": "github.com/Loopring/relay-lib/eth/accessor",
+			"path": "github.com/expanse-org/relay-lib/eth/accessor",
 			"revision": "f44ff08db60ffdd75b562ea91f88938bd20ce6a8",
 			"revisionTime": "2018-07-02T07:31:28Z"
 		},
 		{
 			"checksumSHA1": "yjwCLAiJtOOVPwzfVUVXYM+XG10=",
-			"path": "github.com/Loopring/relay-lib/eth/contract",
+			"path": "github.com/expanse-org/relay-lib/eth/contract",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "HGzf4YUC7GmkWUdI/RxoYpwEuDM=",
-			"path": "github.com/Loopring/relay-lib/eth/gasprice_evaluator",
+			"path": "github.com/expanse-org/relay-lib/eth/gasprice_evaluator",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "K/WdqY7rPRJ+slAZeEH7Q10IbfA=",
-			"path": "github.com/Loopring/relay-lib/eth/loopringaccessor",
+			"path": "github.com/expanse-org/relay-lib/eth/loopringaccessor",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "+6um3id4MJKGs8siWOX6HaMxDns=",
-			"path": "github.com/Loopring/relay-lib/eth/types",
+			"path": "github.com/expanse-org/relay-lib/eth/types",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "S3RJV9vzxb8MlpkvgXMx+WhJnKw=",
-			"path": "github.com/Loopring/relay-lib/eventemitter",
+			"path": "github.com/expanse-org/relay-lib/eventemitter",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "AL9Ti9y5Ut7anc2uIqZ625PxHek=",
-			"path": "github.com/Loopring/relay-lib/extractor",
+			"path": "github.com/expanse-org/relay-lib/extractor",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "HZAg/0UWpZxOueINRW+cvARgFc0=",
-			"path": "github.com/Loopring/relay-lib/kafka",
+			"path": "github.com/expanse-org/relay-lib/kafka",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "JjFEjU8YY4HP+oaGiGI9O8xg+3k=",
-			"path": "github.com/Loopring/relay-lib/log",
+			"path": "github.com/expanse-org/relay-lib/log",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "AjASaX5cnsj+Yt9U0e35uQm9v6M=",
-			"path": "github.com/Loopring/relay-lib/marketcap",
+			"path": "github.com/expanse-org/relay-lib/marketcap",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "x3plrtIb5B1lXid6EaDVWaAtCws=",
-			"path": "github.com/Loopring/relay-lib/marketutil",
+			"path": "github.com/expanse-org/relay-lib/marketutil",
 			"revision": "692de0106d2215fd5c4f57e77ae450aa84169fe9",
 			"revisionTime": "2018-07-03T09:45:49Z"
 		},
 		{
 			"checksumSHA1": "ToScnYa3M8T9Ip74E96TjqYSVQg=",
-			"path": "github.com/Loopring/relay-lib/motan",
+			"path": "github.com/expanse-org/relay-lib/motan",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "9JGFqwFL9XMuuIP8aR0/50IEmUA=",
-			"path": "github.com/Loopring/relay-lib/params",
+			"path": "github.com/expanse-org/relay-lib/params",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "cF7cx7JvO+DCi173XfFED5Vm1ss=",
-			"path": "github.com/Loopring/relay-lib/sns",
+			"path": "github.com/expanse-org/relay-lib/sns",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "BBZ7Lq1YNP5sASzyy73THZm3/uE=",
-			"path": "github.com/Loopring/relay-lib/types",
+			"path": "github.com/expanse-org/relay-lib/types",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "kP14pwbOsJlPAwJAh4TYBCeYrlo=",
-			"path": "github.com/Loopring/relay-lib/utils",
+			"path": "github.com/expanse-org/relay-lib/utils",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "v3giXysaRXgOP58V2uIJ0HJC4o8=",
-			"path": "github.com/Loopring/relay-lib/zklock",
+			"path": "github.com/expanse-org/relay-lib/zklock",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "kHh2EuzlSG80I7Hegzb8XnM5ybU=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/shopify/sarama",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/shopify/sarama",
 			"path": "github.com/shopify/sarama",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "guScL2pCAVSxcVfMpmK9H8IsEZ0=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/afex/hystrix-go/hystrix",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/afex/hystrix-go/hystrix",
 			"path": "github.com/afex/hystrix-go/hystrix",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Faf+6l3ilO1TNqunITcXMQ18AoE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/afex/hystrix-go/hystrix/metric_collector",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/afex/hystrix-go/hystrix/metric_collector",
 			"path": "github.com/afex/hystrix-go/hystrix/metric_collector",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "rdCk0eQFvG+Hbn/R3k9zMMOf98w=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/afex/hystrix-go/hystrix/rolling",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/afex/hystrix-go/hystrix/rolling",
 			"path": "github.com/afex/hystrix-go/hystrix/rolling",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "USkefO0g1U9mr+8hagv3fpSkrxg=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aristanetworks/goarista/monotime",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aristanetworks/goarista/monotime",
 			"path": "github.com/aristanetworks/goarista/monotime",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "79H6/5DVpwkojRFWRS0HMaiXPGM=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws",
 			"path": "github.com/aws/aws-sdk-go/aws",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Y9W+4GimK4Fuxq+vyIskVYFRnX4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/awserr",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/awserr",
 			"path": "github.com/aws/aws-sdk-go/aws/awserr",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "yyYr41HZ1Aq0hWc3J5ijXwYEcac=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/awsutil",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/awsutil",
 			"path": "github.com/aws/aws-sdk-go/aws/awsutil",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "hicPtITUionsA+dgs1SpsZUkQu4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/client",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/client",
 			"path": "github.com/aws/aws-sdk-go/aws/client",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "ieAJ+Cvp/PKv1LpUEnUXpc3OI6E=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/client/metadata",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/client/metadata",
 			"path": "github.com/aws/aws-sdk-go/aws/client/metadata",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "vVSUnICaD9IaBQisCfw0n8zLwig=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
 			"path": "github.com/aws/aws-sdk-go/aws/corehandlers",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Y+cPwQL0dZMyqp3wI+KJWmA9KQ8=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials",
 			"path": "github.com/aws/aws-sdk-go/aws/credentials",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "u3GOAJLmdvbuNUeUEcZSEAOeL/0=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
 			"path": "github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "NUJUTWlc1sV8b7WjfiYc4JZbXl0=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
 			"path": "github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "JEYqmF83O5n5bHkupAzA6STm0no=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/credentials/stscreds",
 			"path": "github.com/aws/aws-sdk-go/aws/credentials/stscreds",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "HogDW/Wu6ZKTDrQ2HSzG8/vj9Ag=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/defaults",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/defaults",
 			"path": "github.com/aws/aws-sdk-go/aws/defaults",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "pDnK93CqjQ4ROSW8Y/RuHXjv52M=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/ec2metadata",
 			"path": "github.com/aws/aws-sdk-go/aws/ec2metadata",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "HyynTJ+UU7h0vv85x18zxc9h8C8=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/endpoints",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/endpoints",
 			"path": "github.com/aws/aws-sdk-go/aws/endpoints",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "CntJM8T3dRgC0e1i66CIbP8uCSY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/request",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/request",
 			"path": "github.com/aws/aws-sdk-go/aws/request",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "J66FLqo++F1PXLUU8XQqYaageSc=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/session",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/session",
 			"path": "github.com/aws/aws-sdk-go/aws/session",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "BqDC+Sxo3hrC6WYvwx1U4OObaT4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/signer/v4",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/aws/signer/v4",
 			"path": "github.com/aws/aws-sdk-go/aws/signer/v4",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "wjxQlU1PYxrDRFoL1Vek8Wch7jk=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/internal/sdkio",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/internal/sdkio",
 			"path": "github.com/aws/aws-sdk-go/internal/sdkio",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "MYLldFRnsZh21TfCkgkXCT3maPU=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/internal/sdkrand",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/internal/sdkrand",
 			"path": "github.com/aws/aws-sdk-go/internal/sdkrand",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "04ypv4x12l4q0TksA1zEVsmgpvw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/internal/shareddefaults",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/internal/shareddefaults",
 			"path": "github.com/aws/aws-sdk-go/internal/shareddefaults",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "NStHCXEvYqG72GknZyv1jaKaeH0=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol",
 			"path": "github.com/aws/aws-sdk-go/private/protocol",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "SBBVYdLcocjdPzMWgDuR8vcOfDQ=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/query",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/query",
 			"path": "github.com/aws/aws-sdk-go/private/protocol/query",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "9V1PvtFQ9MObZTc3sa86WcuOtOU=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
 			"path": "github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "pkeoOfZpHRvFG/AOZeTf0lwtsFg=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/rest",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/rest",
 			"path": "github.com/aws/aws-sdk-go/private/protocol/rest",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "6zosteWJqUGM9+t9dkANQymMA9s=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
 			"path": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "BD7EvXghMHMw52wtxISIhpJ4CTk=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/service/cloudwatch",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/service/cloudwatch",
 			"path": "github.com/aws/aws-sdk-go/service/cloudwatch",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "1Fin0tclPDC/+rL7V06GrzXaMXI=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/service/sns",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/service/sns",
 			"path": "github.com/aws/aws-sdk-go/service/sns",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "llx3DydC0nTbF0cZoYUjO9P1eZw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/aws/aws-sdk-go/service/sts",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/aws/aws-sdk-go/service/sts",
 			"path": "github.com/aws/aws-sdk-go/service/sts",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "b31jCwfdVrPyDqsT9blOibZ9+OA=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/beberlei/fastcgi-serve/fcgiclient",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/beberlei/fastcgi-serve/fcgiclient",
 			"path": "github.com/beberlei/fastcgi-serve/fcgiclient",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "3V/mWSKTBmzzOKS+m19pAPEzW2U=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/bsm/sarama-cluster",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/bsm/sarama-cluster",
 			"path": "github.com/bsm/sarama-cluster",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "TN8XhnRG+NKQjWqJcK2XNuwGc70=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/btcsuite/btcd/btcec",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/btcsuite/btcd/btcec",
 			"path": "github.com/btcsuite/btcd/btcec",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "A7qoimg0p6dsVIQNpjX0uW2UjoM=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/chasex/redis-go-cluster",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/chasex/redis-go-cluster",
 			"path": "github.com/chasex/redis-go-cluster",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "CSPbwbyzqA6sfORicn4HFtIhF/c=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/davecgh/go-spew/spew",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/davecgh/go-spew/spew",
 			"path": "github.com/davecgh/go-spew/spew",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "y2Kh4iPlgCPXSGTCcFpzePYdzzg=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/eapache/go-resiliency/breaker",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/eapache/go-resiliency/breaker",
 			"path": "github.com/eapache/go-resiliency/breaker",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "WHl96RVZlOOdF4Lb1OOadMpw8ls=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/eapache/go-xerial-snappy",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/eapache/go-xerial-snappy",
 			"path": "github.com/eapache/go-xerial-snappy",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "SJhV59StVXLFvLU0l9s0d00nV10=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/eapache/queue",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/eapache/queue",
 			"path": "github.com/eapache/queue",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -659,21 +659,21 @@
 		},
 		{
 			"checksumSHA1": "2UmMbNHc8FBr98mJFN1k8ISOIHk=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/garyburd/redigo/internal",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/garyburd/redigo/internal",
 			"path": "github.com/garyburd/redigo/internal",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "sc/XC7agvewnB1AGXMGZRkVzM8c=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/garyburd/redigo/redis",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/garyburd/redigo/redis",
 			"path": "github.com/garyburd/redigo/redis",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "VvZKmbuBN1QAG699KduTdmSPwA4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/go-ini/ini",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/go-ini/ini",
 			"path": "github.com/go-ini/ini",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -686,49 +686,49 @@
 		},
 		{
 			"checksumSHA1": "KZ3QD2QgUS4RcoKiA3mn5pSlJxQ=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/go-stack/stack",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/go-stack/stack",
 			"path": "github.com/go-stack/stack",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "yqF125xVSkmfLpIVGrLlfE05IUk=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/golang/protobuf/proto",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/golang/protobuf/proto",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "VfkiItDBFFkZluaAMAzJipDXNBY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/golang/protobuf/ptypes",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/golang/protobuf/ptypes",
 			"path": "github.com/golang/protobuf/ptypes",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "CUN+8uU3mWzv9JNB2RXTefAuBb4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/golang/protobuf/ptypes/any",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/golang/protobuf/ptypes/any",
 			"path": "github.com/golang/protobuf/ptypes/any",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "hUjAj0dheFVDl84BAnSWj9qy2iY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/golang/protobuf/ptypes/duration",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/golang/protobuf/ptypes/duration",
 			"path": "github.com/golang/protobuf/ptypes/duration",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "O2ItP5rmfrgxPufhjJXbFlXuyL8=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/golang/protobuf/ptypes/timestamp",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/golang/protobuf/ptypes/timestamp",
 			"path": "github.com/golang/protobuf/ptypes/timestamp",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "p/8vSviYF91gFflhrt5vkyksroo=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/golang/snappy",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/golang/snappy",
 			"path": "github.com/golang/snappy",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -753,7 +753,7 @@
 		},
 		{
 			"checksumSHA1": "KBZAPkgG/bO26yf2KYKLZPyQw9k=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/jinzhu/gorm",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/jinzhu/gorm",
 			"path": "github.com/jinzhu/gorm",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -766,21 +766,21 @@
 		},
 		{
 			"checksumSHA1": "VIp1lZm6joWhlNdwhady8u//qRw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/jinzhu/inflection",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/jinzhu/inflection",
 			"path": "github.com/jinzhu/inflection",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "0ZrwvB6KoGPj2PoDNSEJwxQ6Mog=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/jmespath/go-jmespath",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/jmespath/go-jmespath",
 			"path": "github.com/jmespath/go-jmespath",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "EHjhpHipgm+XGccrRAms9AW3Ewk=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/mitchellh/mapstructure",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/mitchellh/mapstructure",
 			"path": "github.com/mitchellh/mapstructure",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -811,21 +811,21 @@
 		},
 		{
 			"checksumSHA1": "Se195FlZ160eaEk/uVx4KdTPSxU=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/pborman/uuid",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/pborman/uuid",
 			"path": "github.com/pborman/uuid",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "xKzx54LbkghuMauevGWevn5ip3w=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/pierrec/lz4",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/pierrec/lz4",
 			"path": "github.com/pierrec/lz4",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "zPWRjzsPeXCoqmidIcJtHbvrvRs=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/pierrec/xxHash/xxHash32",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/pierrec/xxHash/xxHash32",
 			"path": "github.com/pierrec/xxHash/xxHash32",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -838,14 +838,14 @@
 		},
 		{
 			"checksumSHA1": "an5RM8wjgPPloolUUYkvEncbHu4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/rcrowley/go-metrics",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/rcrowley/go-metrics",
 			"path": "github.com/rcrowley/go-metrics",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "28UVHMmHx0iqO0XiJsjx+fwILyI=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/rjeczalik/notify",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/rjeczalik/notify",
 			"path": "github.com/rjeczalik/notify",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -864,98 +864,98 @@
 		},
 		{
 			"checksumSHA1": "hCRfPlNpqv8tvVivLzmXsoUOf1c=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/rs/xhandler",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/rs/xhandler",
 			"path": "github.com/rs/xhandler",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "ze1R6Lrk0kW0cX24ZdZD6ZpIDCo=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/samuel/go-zookeeper/zk",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/samuel/go-zookeeper/zk",
 			"path": "github.com/samuel/go-zookeeper/zk",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "3QsnhPTXGytTbW3uDvQLgSo9s9M=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb",
 			"path": "github.com/syndtr/goleveldb/leveldb",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "EKIow7XkgNdWvR/982ffIZxKG8Y=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/cache",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/cache",
 			"path": "github.com/syndtr/goleveldb/leveldb/cache",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "5KPgnvCPlR0ysDAqo6jApzRQ3tw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/comparer",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/comparer",
 			"path": "github.com/syndtr/goleveldb/leveldb/comparer",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "1DRAxdlWzS4U0xKN/yQ/fdNN7f0=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/errors",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/errors",
 			"path": "github.com/syndtr/goleveldb/leveldb/errors",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "eqKeD6DS7eNCtxVYZEHHRKkyZrw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/filter",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/filter",
 			"path": "github.com/syndtr/goleveldb/leveldb/filter",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "weSsccMav4BCerDpSLzh3mMxAYo=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/iterator",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/iterator",
 			"path": "github.com/syndtr/goleveldb/leveldb/iterator",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "gJY7bRpELtO0PJpZXgPQ2BYFJ88=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/journal",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/journal",
 			"path": "github.com/syndtr/goleveldb/leveldb/journal",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "MtYY1b2234y/MlS+djL8tXVAcQs=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/memdb",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/memdb",
 			"path": "github.com/syndtr/goleveldb/leveldb/memdb",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "UmQeotV+m8/FduKEfLOhjdp18rs=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/opt",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/opt",
 			"path": "github.com/syndtr/goleveldb/leveldb/opt",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "QCSae2ub87f8awH+PKMpd8ZYOtg=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/storage",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/storage",
 			"path": "github.com/syndtr/goleveldb/leveldb/storage",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "gWFPMz8OQeul0t54RM66yMTX49g=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/table",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/table",
 			"path": "github.com/syndtr/goleveldb/leveldb/table",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "V/Dh7NV0/fy/5jX1KaAjmGcNbzI=",
-			"origin": "github.com/Loopring/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/util",
+			"origin": "github.com/expanse-org/relay-lib/vendor/github.com/syndtr/goleveldb/leveldb/util",
 			"path": "github.com/syndtr/goleveldb/leveldb/util",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -1010,238 +1010,238 @@
 		},
 		{
 			"checksumSHA1": "1MGpGDQqnUoRpv7VEcQrXOBydXE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/crypto/pbkdf2",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/crypto/pbkdf2",
 			"path": "golang.org/x/crypto/pbkdf2",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "dHh6VeHcbNg11miGjGEl8LbPe7w=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/crypto/scrypt",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/crypto/scrypt",
 			"path": "golang.org/x/crypto/scrypt",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "dr5+PfIRzXeN+l1VG+s0lea9qz8=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/context",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/context",
 			"path": "golang.org/x/net/context",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "cY4u3LCdJxKaS2GbftZjfrOSnNE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/http2",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/http2",
 			"path": "golang.org/x/net/http2",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "ezWhc7n/FtqkLDQKeU2JbW+80tE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/http2/hpack",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/http2/hpack",
 			"path": "golang.org/x/net/http2/hpack",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "g/Z/Ka0VgJESgQK7/SJCjm/aX0I=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/idna",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/idna",
 			"path": "golang.org/x/net/idna",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "UxahDzW2v4mf/+aFxruuupaoIwo=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/internal/timeseries",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/internal/timeseries",
 			"path": "golang.org/x/net/internal/timeseries",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "3xyuaSNmClqG4YWC7g0isQIbUTc=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/lex/httplex",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/lex/httplex",
 			"path": "golang.org/x/net/lex/httplex",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "u/r66lwYfgg682u5hZG7/E7+VCY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/trace",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/trace",
 			"path": "golang.org/x/net/trace",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "7EZyXN0EmZLgGxZxK01IJua4c8o=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/net/websocket",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/net/websocket",
 			"path": "golang.org/x/net/websocket",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "r1jWq0V3AI5DLN0aCnXXMH/is9Q=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/sys/unix",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/sys/unix",
 			"path": "golang.org/x/sys/unix",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "faFDXp++cLjLBlvsr+izZ+go1WU=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/text/secure/bidirule",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/text/secure/bidirule",
 			"path": "golang.org/x/text/secure/bidirule",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "ziMb9+ANGRJSSIuxYdRbA+cDRBQ=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/text/transform",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/text/transform",
 			"path": "golang.org/x/text/transform",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "MRLtTu/vpd18le8/HPLxOdjO5RE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/text/unicode/bidi",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/text/unicode/bidi",
 			"path": "golang.org/x/text/unicode/bidi",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "kKylzIrLEnH8NKyeVAL0dq5gjVQ=",
-			"origin": "github.com/Loopring/relay-lib/vendor/golang.org/x/text/unicode/norm",
+			"origin": "github.com/expanse-org/relay-lib/vendor/golang.org/x/text/unicode/norm",
 			"path": "golang.org/x/text/unicode/norm",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "AvVpgwhxhJgjoSledwDtYrEKVE4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/genproto/googleapis/rpc/status",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/genproto/googleapis/rpc/status",
 			"path": "google.golang.org/genproto/googleapis/rpc/status",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Le8L6o3gvPUUs0hKEBSAfuym7Tw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc",
 			"path": "google.golang.org/grpc",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "AS14kO6FrzuQ/8wP+a/n55SNW6U=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/balancer",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/balancer",
 			"path": "google.golang.org/grpc/balancer",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "Dkjgw1HasWvqct0IuiZdjbD7O0c=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/codes",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/codes",
 			"path": "google.golang.org/grpc/codes",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "XH2WYcDNwVO47zYShREJjcYXm0Y=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/connectivity",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/connectivity",
 			"path": "google.golang.org/grpc/connectivity",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "5ylThBvJnIcyWhL17AC9+Sdbw2E=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/credentials",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/credentials",
 			"path": "google.golang.org/grpc/credentials",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "WxP3QV0Y4fIx5NsT0dwBp6JsrJE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/grpclb/grpc_lb_v1/messages",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/grpclb/grpc_lb_v1/messages",
 			"path": "google.golang.org/grpc/grpclb/grpc_lb_v1/messages",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "ntHev01vgZgeIh5VFRmbLx/BSTo=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/grpclog",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/grpclog",
 			"path": "google.golang.org/grpc/grpclog",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "U9vDe05/tQrvFBojOQX8Xk12W9I=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/internal",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/internal",
 			"path": "google.golang.org/grpc/internal",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "hcuHgKp8W0wIzoCnNfKI8NUss5o=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/keepalive",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/keepalive",
 			"path": "google.golang.org/grpc/keepalive",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "KeUmTZV+2X46C49cKyjp+xM7fvw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/metadata",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/metadata",
 			"path": "google.golang.org/grpc/metadata",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "dgwdT20kXe4ZbXBOFbTwVQt8rmA=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/naming",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/naming",
 			"path": "google.golang.org/grpc/naming",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "n5EgDdBqFMa2KQFhtl+FF/4gIFo=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/peer",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/peer",
 			"path": "google.golang.org/grpc/peer",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "bJJaQUbZqEpTlnXTXgGwOZWijs4=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/resolver",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/resolver",
 			"path": "google.golang.org/grpc/resolver",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "mN8hVA1AgNCqERfkX/4l/EM6srY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/stats",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/stats",
 			"path": "google.golang.org/grpc/stats",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "3Dwz4RLstDHMPyDA7BUsYe+JP4w=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/status",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/status",
 			"path": "google.golang.org/grpc/status",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "qvArRhlrww5WvRmbyMF2mUfbJew=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/tap",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/tap",
 			"path": "google.golang.org/grpc/tap",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "eaAukoLg7xWreNDm68Vs3dVc4UY=",
-			"origin": "github.com/Loopring/relay-lib/vendor/google.golang.org/grpc/transport",
+			"origin": "github.com/expanse-org/relay-lib/vendor/google.golang.org/grpc/transport",
 			"path": "google.golang.org/grpc/transport",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "NGg7/qIJVUfXi7xnEyyDLocdi6Y=",
-			"origin": "github.com/Loopring/relay-lib/vendor/gopkg.in/fatih/set.v0",
+			"origin": "github.com/expanse-org/relay-lib/vendor/gopkg.in/fatih/set.v0",
 			"path": "gopkg.in/fatih/set.v0",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -1290,14 +1290,14 @@
 		},
 		{
 			"checksumSHA1": "DQXNV0EivoHm4q+bkdahYXrjjfE=",
-			"origin": "github.com/Loopring/relay-lib/vendor/gopkg.in/karalabe/cookiejar.v2/collections/prque",
+			"origin": "github.com/expanse-org/relay-lib/vendor/gopkg.in/karalabe/cookiejar.v2/collections/prque",
 			"path": "gopkg.in/karalabe/cookiejar.v2/collections/prque",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
 		},
 		{
 			"checksumSHA1": "0xgs8lwcWLUffemlj+SsgKlxvDU=",
-			"origin": "github.com/Loopring/relay-lib/vendor/gopkg.in/natefinch/npipe.v2",
+			"origin": "github.com/expanse-org/relay-lib/vendor/gopkg.in/natefinch/npipe.v2",
 			"path": "gopkg.in/natefinch/npipe.v2",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"
@@ -1310,7 +1310,7 @@
 		},
 		{
 			"checksumSHA1": "RDJpJQwkF012L6m/2BJizyOksNw=",
-			"origin": "github.com/Loopring/relay-lib/vendor/gopkg.in/yaml.v2",
+			"origin": "github.com/expanse-org/relay-lib/vendor/gopkg.in/yaml.v2",
 			"path": "gopkg.in/yaml.v2",
 			"revision": "505032a0737bf9d1007ff782db67a4e41eac71f7",
 			"revisionTime": "2018-06-28T04:47:44Z"

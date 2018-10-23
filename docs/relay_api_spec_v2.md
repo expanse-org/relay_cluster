@@ -87,7 +87,7 @@ Get user's balance and token allowance info.
 #### Parameters
 
 - `owner` - The address, if is null, will query all orders.
-- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 ```js
 params: [{
@@ -100,7 +100,7 @@ params: [{
 
 `Account` - Account balance info object.
 
-- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 2. `tokens` - Info on all token balance and allowance arrays.
 
 #### Example
@@ -138,9 +138,9 @@ Submits an order. The order is submitted to the relay as a JSON object, which wi
 
 #### Parameters
 
-`JSON Object` - The order object(refer to [LoopringProtocol](https://github.com/Loopring/protocol/blob/master/contracts/LoopringProtocol.sol))
+`JSON Object` - The order object(refer to [LoopringProtocol](https://github.com/expanse-org/protocol/blob/master/contracts/LoopringProtocol.sol))
   - `protocol` - Loopring contract address
-  - `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+  - `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
   - `walletAddress` - The wallet margin address.
   - `owner` - user's wallet address
   - `AuthAddr` - The wallet auth public key.
@@ -213,7 +213,7 @@ Get loopring order list.
 - `owner` - The address, if is null, will query all orders.
 - `orderHash` - The order hash.
 - `status` - order status enum string.(status collection is : ORDER_OPENED(include ORDER_NEW and ORDER_PARTIAL), ORDER_NEW, ORDER_PARTIAL, ORDER_FINISHED, ORDER_CANCEL, ORDER_CUTOFF)
-- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 - `market` - The market of the order.(format is LRC-WETH)
 - `side` - The side of order. only support "buy" and "sell".
 - `orderType` - The type of order. only support "market_order" and "p2p_order", default is "market_order".
@@ -239,7 +239,7 @@ params: [{
 `PageResult of Order` - Order list with page info
 
 1. `data` 
-  - `orginalOrder` - The original order info when submitting.(refer to [LoopringProtocol](https://github.com/Loopring/protocol/blob/master/contracts/LoopringProtocol.sol))
+  - `orginalOrder` - The original order info when submitting.(refer to [LoopringProtocol](https://github.com/expanse-org/protocol/blob/master/contracts/LoopringProtocol.sol))
   - `status` - The current order status.
   - `dealtAmountS` - Dealt amount of token S.
   - `dealtAmountB` - Dealt amount of token B.
@@ -320,7 +320,7 @@ params: [{
 
 `Object of Order` - Order detail info.
 
-- `orginalOrder` - The original order info when submitting.(refer to [LoopringProtocol](https://github.com/Loopring/protocol/blob/master/contracts/LoopringProtocol.sol))
+- `orginalOrder` - The original order info when submitting.(refer to [LoopringProtocol](https://github.com/expanse-org/protocol/blob/master/contracts/LoopringProtocol.sol))
 - `status` - The current order status.
 - `dealtAmountS` - Dealt amount of token S.
 - `dealtAmountB` - Dealt amount of token B.
@@ -379,7 +379,7 @@ Get depth and accuracy by token pair
 #### Parameters
 
 1. `market` - The market pair.
-2 `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2 `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `length` - The length of the depth data. default is 20.
 
 
@@ -395,7 +395,7 @@ params: [{
 
 1. `depth` - The depth data, every depth element is an array of length three, which contains price, amount A, and amount B in market A-B in an order.
 2. `market` - The market pair.
-3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 #### Example
 ```js
@@ -600,7 +600,7 @@ Get order fill history. This history consists of OrderFilled events.
 
 1. `market` - The market of the order.(format is LRC-WETH)
 2. `owner` - The address, if is null, will query all orders.
-3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 4. `orderHash` - The order hash.
 5. `ringHash` - The order fill related ring's hash.
 6. `pageIndex` - The page want to query, default is 1.
@@ -745,8 +745,8 @@ Get all mined rings.
 #### Parameters
 
 1. `ringIndex` - The ring index
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
-2. `protocolAddress` - The loopring [LoopringProtocolImpl](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
+2. `protocolAddress` - The loopring [LoopringProtocolImpl](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `pageIndex` - The page desired from query, default is 1.
 4. `pageSize` - The size per page, default is 50.
 
@@ -762,7 +762,7 @@ params: [{
 
 #### Returns
 
-1. `data` - The ring info.(refer to [Ring&RingMined](https://github.com/Loopring/protocol/blob/3bdc40c4f319e8fe70f58f82563db49579094b5c/contracts/LoopringProtocolImpl.sol#L109)
+1. `data` - The ring info.(refer to [Ring&RingMined](https://github.com/expanse-org/protocol/blob/3bdc40c4f319e8fe70f58f82563db49579094b5c/contracts/LoopringProtocolImpl.sol#L109)
   - `ringHash` - The ring hash.
   - `tradeAmount` - The number of orders to be filled in the ring.
   - `miner` - The miner that submits filled orders.
@@ -812,7 +812,7 @@ Get cut off time of the address.
 #### Parameters
 
 1. `address` - The address.
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `blockNumber` - "earliest", "latest" or "pending", default is "latest".
 
 ```js
@@ -889,7 +889,7 @@ Get the total frozen amount of all unfinished orders
 
 1. `owner` - The address.
 2. `token` - The specific token which you want to get.
-3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 ```js
 params: [{
@@ -923,7 +923,7 @@ Get the total frozen lrcFee of all unfinished orders
 #### Parameters
 
 1. `owner` - The address, if is null, will query all orders.
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 ```js
 params: [{
@@ -1268,7 +1268,7 @@ get orderbook from relay. the difference of orderbook and depth is that orderboo
 #### Parameters
 
 1. `market` - The market pair.
-2 `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2 `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 ```js
 params: [{
@@ -1280,7 +1280,7 @@ params: [{
 #### Returns
 
 1. `market` - The market pair.
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `buy`  - buy list of orderbook element.
 4. `sell` - sell list of orderbook element.
 
@@ -1379,7 +1379,7 @@ params: [{
   "tokenB" : "0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0", // tokenB's token address, if type = 4, must be applied.
   "type" : 2,
   "sign" : {
-    // v, r, s = sign(keccak256(timestamp)) , please see web3j, same to loopring order sign, https://github.com/Loopring/loopring.js/wiki/%E8%B7%AF%E5%8D%B0%E5%8D%8F%E8%AE%AEv1.0.0%E8%AE%A2%E5%8D%95%E7%BB%93%E6%9E%84%E5%92%8C%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D
+    // v, r, s = sign(keccak256(timestamp)) , please see web3j, same to loopring order sign, https://github.com/expanse-org/loopring.js/wiki/%E8%B7%AF%E5%8D%B0%E5%8D%8F%E8%AE%AEv1.0.0%E8%AE%A2%E5%8D%95%E7%BB%93%E6%9E%84%E5%92%8C%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D
       "owner" : "0x71c079107b5af8619d54537a93dbf16e5aab4900", // owner address
       "v" : 27,
       "r" : "0xfc476be69f175c18f16cf72738cec0b810716a8e564914e8d6eb2f61e33ad454",
@@ -1588,7 +1588,7 @@ Get user's balance and token allowance info.
 #### Parameters
 
 - `owner` - The wallet address
-- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+- `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 ```js
 socketio.emit("balance_req", '{"owner" : "0x847983c3a34afa192cfee860698584c030f4c9db1", "delegateAddress" : "0x5567ee920f7E62274284985D793344351A00142B"}', function(data) {
@@ -1603,7 +1603,7 @@ socketio.on("balance_res", function(data) {
 
 `Account` - Account balance info object.
 
-1. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+1. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 2. `tokens` - All token balance and allowance info array.
 
 #### Example
@@ -1953,7 +1953,7 @@ Get depth and accuracy by token pair.
 #### Parameters
 
 1. `market` - The market pair.
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `length` - The length of the depth data. default is 20.
 
 
@@ -1970,7 +1970,7 @@ socketio.on("depth_res", function(data) {
 
 1. `depth` - The depth data, every depth element is a three length of array, which contain price, amount A and B in market A-B in order.
 2. `market` - The market pair.
-3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+3. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 #### Example
 ```js
@@ -2135,7 +2135,7 @@ emit with `_req` postfix and listen on `_res` postfix with the event key
 #### Parameters
 
 1. `market` - The market pair.
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 
 ```js
 params: {"owner" : "0x5567ee920f7E62274284985D793344351A00142B", "delegateAddress" : "0x17233e07c67d086464fD408148c3ABB56245FA64"}
@@ -2156,7 +2156,7 @@ socketio.on("orderbook_res", function(data) {
 #### Returns
 
 1. `market` - The market pair.
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `buy`  - buy list of orderbook element.
 4. `sell` - sell list of orderbook element.
 
@@ -2244,7 +2244,7 @@ emit with `_req` postfix and listen on `_res` postfix with the event key.
 #### Parameters
 
 1. `market` - The market of the order.(format is LRC-WETH)
-2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/Loopring/token-listing/blob/master/ethereum/deployment.md).
+2. `delegateAddress` - The loopring [TokenTransferDelegate Protocol](https://github.com/expanse-org/token-listing/blob/master/ethereum/deployment.md).
 3. `side` - The market side, buy or sell.
 
 ```js

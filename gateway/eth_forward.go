@@ -1,8 +1,8 @@
 package gateway
 
 import (
-	"github.com/Loopring/relay-lib/eth/accessor"
-	"github.com/Loopring/relay-lib/eth/types"
+	"github.com/expanse-org/relay-lib/eth/accessor"
+	"github.com/expanse-org/relay-lib/eth/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

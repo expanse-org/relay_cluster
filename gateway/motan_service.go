@@ -22,8 +22,8 @@ import (
 	"github.com/Hamzaahmed742/relay_cluster/accountmanager"
 	"github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
 	"github.com/Hamzaahmed742/relay_cluster/ordermanager/viewer"
-	"github.com/Loopring/relay-lib/log"
-	"github.com/Loopring/relay-lib/motan"
+	"github.com/expanse-org/relay-lib/log"
+	"github.com/expanse-org/relay-lib/motan"
 	"math/big"
 	"time"
 )

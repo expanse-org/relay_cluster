@@ -21,9 +21,9 @@ package util
 import (
 	"github.com/Hamzaahmed742/relay_cluster/dao"
 	"github.com/Hamzaahmed742/relay_cluster/txmanager/types"
-	"github.com/Loopring/relay-lib/kafka"
-	"github.com/Loopring/relay-lib/log"
-	libTypes "github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/kafka"
+	"github.com/expanse-org/relay-lib/log"
+	libTypes "github.com/expanse-org/relay-lib/types"
 )
 
 // todo delete return after test

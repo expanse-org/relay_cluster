@@ -18,7 +18,7 @@
 
 package common
 
-import "github.com/Loopring/relay-lib/types"
+import "github.com/expanse-org/relay-lib/types"
 
 var PendingStatus = []types.OrderStatus{
 	types.ORDER_PENDING,

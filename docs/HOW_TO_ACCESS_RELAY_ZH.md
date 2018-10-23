@@ -9,16 +9,16 @@ Relay是钱包与Loopring协议之间的中继，向上和钱包对接，向下�
 ## Relay提供了哪些接入方式？
 HTTP-JSON-RPC2.0是目前Relay最直接的接入方式，我们完全符合JSONRPC2.0规范，详细的接口文档和数据示例，请参考：[Relay API Spec](#https://github.com/Hamzaahmed742/relay_cluster/blob/master/JSONRPC.md)
 
-[Loopring.js](#https://github.com/Loopring/loopring.js)是我们开发Javascript版本的sdk，封装了所有JSONRPC接口，提供方法调用级别的支持，帮助Javascript项目快速接入Relay。
+[Loopring.js](#https://github.com/expanse-org/loopring.js)是我们开发Javascript版本的sdk，封装了所有JSONRPC接口，提供方法调用级别的支持，帮助Javascript项目快速接入Relay。
 
 ## 建议的接入步骤
 Loopring相关的所有文档，代码都是开源的，所以您可以自由的阅读和使用。如果您是第一次接触Loopring，我们建议您按照如下顺序接入Relay：
 
     1. 了解Loopring，请参考我们的文档中心: https://docs.loopring.org
-    2. 了解Loopring协议，阅读我们的白皮书: https://github.com/Loopring/whitepaper
-    3. 了解我们的智能合约实现: https://github.com/Loopring/protocol，很多关键的概念都在合约里定义，所以这一步对接入Relay很重要
+    2. 了解Loopring协议，阅读我们的白皮书: https://github.com/expanse-org/whitepaper
+    3. 了解我们的智能合约实现: https://github.com/expanse-org/protocol，很多关键的概念都在合约里定义，所以这一步对接入Relay很重要
     4. 阅读本文档, 了解接入需要知道的一些信息
-    5. 更进一步，如果您希望自己实现Relay或者Miner，请参考我们的Relay源代码: https://github.com/Loopring/relay
+    5. 更进一步，如果您希望自己实现Relay或者Miner，请参考我们的Relay源代码: https://github.com/expanse-org/relay
 
 ## 版本号
 目前Relay最新版本1.0.0-BETA
@@ -59,7 +59,7 @@ salt | 随机数，用来解决重复下单问题
 ### loopring_submitOrder 提交订单
 
 #### 生成订单
-提交Loopring订单，是Relay最复杂的接口，涉及字段较多，以及对字段的签名。各个字段说明，请参考术语表。签名过程代码示例，请参考[路印协议v1.0.0订单结构和数字签名](https://github.com/Loopring/loopring.js/wiki/路印协议v1.0.0订单结构和数字签名)，签名生成的v,r,s, 在提交订单时一并提交。
+提交Loopring订单，是Relay最复杂的接口，涉及字段较多，以及对字段的签名。各个字段说明，请参考术语表。签名过程代码示例，请参考[路印协议v1.0.0订单结构和数字签名](https://github.com/expanse-org/loopring.js/wiki/路印协议v1.0.0订单结构和数字签名)，签名生成的v,r,s, 在提交订单时一并提交。
 
 #### 校验
 订单提交到Relay后，我们会做一系列校验，包括但不限于：
@@ -109,7 +109,7 @@ Loopring的撮合依赖以太坊网络块生成时间，深度数据会概率性
 
 ## 支持的Token列表
 
-请访问我们合约[支持的Token列表](https://github.com/Loopring/protocol/blob/master/doc/tokens.md)页面
+请访问我们合约[支持的Token列表](https://github.com/expanse-org/protocol/blob/master/doc/tokens.md)页面
 
 ## 测试环境
 Relay集成测试的过程中，我们建立了自己的测试环境，但目前不能保证环境足够稳定，我们正在改进，不久将提供一套稳定的测试环境，以及测试接入文档，提高合作伙伴的接入和测试效率。

@@ -24,8 +24,8 @@ import (
 	"runtime"
 
 	"github.com/Hamzaahmed742/relay_cluster/node"
-	"github.com/Loopring/relay-lib/log"
-	"github.com/Loopring/relay-lib/params"
+	"github.com/expanse-org/relay-lib/log"
+	"github.com/expanse-org/relay-lib/params"
 	"gopkg.in/urfave/cli.v1"
 	"os/signal"
 	"path/filepath"

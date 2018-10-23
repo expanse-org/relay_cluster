@@ -20,8 +20,8 @@ package usermanager
 
 import (
 	"github.com/Hamzaahmed742/relay_cluster/dao"
-	"github.com/Loopring/relay-lib/log"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/log"
+	"github.com/expanse-org/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
 	gocache "github.com/patrickmn/go-cache"
 	"time"

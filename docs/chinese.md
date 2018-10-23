@@ -210,7 +210,7 @@ SocketIO将底层通信封装成事件编程模型，提供基于事件的长连
 ---
 
 ### sdk
-在网络接口的基础上，我们进一步封装了中继接口调用，形成多个平台的sdk，让开发者通过方法调用接入中继，目前JavaScript版本Loopring.js已经开源，IOS和Java SDK正在研发中，SDK是对JSONRPC和Socketio接口调用的封装。Loopring.js请参考文档[Loopring.js](https://github.com/Loopring/loopring.js/wiki/loopring.js-v2.0.0-%E4%B8%AD%E6%96%87%E5%BC%80%E5%8F%91%E8%80%85%E6%96%87%E6%A1%A3)
+在网络接口的基础上，我们进一步封装了中继接口调用，形成多个平台的sdk，让开发者通过方法调用接入中继，目前JavaScript版本Loopring.js已经开源，IOS和Java SDK正在研发中，SDK是对JSONRPC和Socketio接口调用的封装。Loopring.js请参考文档[Loopring.js](https://github.com/expanse-org/loopring.js/wiki/loopring.js-v2.0.0-%E4%B8%AD%E6%96%87%E5%BC%80%E5%8F%91%E8%80%85%E6%96%87%E6%A1%A3)
 
 ---
 
@@ -235,7 +235,7 @@ Loopring基金会实现了两个版本的中继：standalone和cluster， 这里
 
 ### 代码编译
 中继使用golang语言开发，开发中继时使用的是版本1.9.2, 编译中继建议使用大版本1.9, go开发和编译环境的搭建，请自行google，
-源代码地址：https://github.com/Loopring/relay, 请使用master分支
+源代码地址：https://github.com/expanse-org/relay, 请使用master分支
 代码编译和运行， 请参考README
 
 ---

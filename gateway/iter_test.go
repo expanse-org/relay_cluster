@@ -20,8 +20,8 @@ package gateway
 
 import (
 	"github.com/Hamzaahmed742/relay_cluster/test"
-	"github.com/Loopring/relay-lib/cache"
-	util "github.com/Loopring/relay-lib/marketutil"
+	"github.com/expanse-org/relay-lib/cache"
+	util "github.com/expanse-org/relay-lib/marketutil"
 	"math/big"
 	"strconv"
 	"sync"

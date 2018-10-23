@@ -21,9 +21,9 @@ package matrix
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Loopring/relay-lib/broadcast"
-	"github.com/Loopring/relay-lib/cache"
-	"github.com/Loopring/relay-lib/log"
+	"github.com/expanse-org/relay-lib/broadcast"
+	"github.com/expanse-org/relay-lib/cache"
+	"github.com/expanse-org/relay-lib/log"
 	"time"
 )
 

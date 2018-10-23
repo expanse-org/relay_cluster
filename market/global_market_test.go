@@ -24,8 +24,8 @@ import (
 	//"github.com/Hamzaahmed742/relay_cluster/test"
 	"testing"
 	//"time"
-	"github.com/Loopring/relay-lib/cache"
-	"github.com/Loopring/relay-lib/cache/redis"
+	"github.com/expanse-org/relay-lib/cache"
+	"github.com/expanse-org/relay-lib/cache/redis"
 	//"time"
 )
 

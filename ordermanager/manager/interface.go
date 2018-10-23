@@ -21,8 +21,8 @@ package manager
 import (
 	"github.com/Hamzaahmed742/relay_cluster/dao"
 	omcm "github.com/Hamzaahmed742/relay_cluster/ordermanager/common"
-	"github.com/Loopring/relay-lib/marketcap"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/marketcap"
+	"github.com/expanse-org/relay-lib/types"
 )
 
 type EventStatusHandler interface {

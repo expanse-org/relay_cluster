@@ -20,8 +20,8 @@ package manager
 
 import (
 	"fmt"
-	"github.com/Loopring/relay-lib/log"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/log"
+	"github.com/expanse-org/relay-lib/types"
 	"math/big"
 	"sort"
 )

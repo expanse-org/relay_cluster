@@ -256,7 +256,7 @@ The Loopring Foundation implements two versions of the relay: standalone and clu
 ---
 
 ### Compilation
-Relays are developed using the golang language. Version 1.9.2 is used when developing relays. Version 1.9 is recommended for compiler relays. Go build your own environment. Please make your own google source code address: https://github.com/Loopring/relay, please use the master branch code to compile and run, and please refer to README
+Relays are developed using the golang language. Version 1.9.2 is used when developing relays. Version 1.9 is recommended for compiler relays. Go build your own environment. Please make your own google source code address: https://github.com/expanse-org/relay, please use the master branch code to compile and run, and please refer to README
 
 --- 
 

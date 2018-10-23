@@ -19,7 +19,7 @@
 package cache
 
 import (
-	"github.com/Loopring/relay-lib/cache"
+	"github.com/expanse-org/relay-lib/cache"
 	"github.com/ethereum/go-ethereum/common"
 )
 

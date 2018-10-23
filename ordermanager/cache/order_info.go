@@ -20,8 +20,8 @@ package cache
 
 import (
 	"encoding/json"
-	"github.com/Loopring/relay-lib/cache"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/cache"
+	"github.com/expanse-org/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

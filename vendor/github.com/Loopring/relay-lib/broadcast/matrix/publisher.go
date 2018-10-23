@@ -20,8 +20,8 @@ package matrix
 
 import (
 	"fmt"
-	"github.com/Loopring/relay-lib/broadcast"
-	"github.com/Loopring/relay-lib/log"
+	"github.com/expanse-org/relay-lib/broadcast"
+	"github.com/expanse-org/relay-lib/log"
 )
 
 type MatrixPublisherOption struct {

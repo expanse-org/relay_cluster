@@ -20,8 +20,8 @@ package broadcast
 
 import (
 	"encoding/json"
-	"github.com/Loopring/relay-lib/log"
-	"github.com/Loopring/relay-lib/utils"
+	"github.com/expanse-org/relay-lib/log"
+	"github.com/expanse-org/relay-lib/utils"
 	"sync"
 )
 

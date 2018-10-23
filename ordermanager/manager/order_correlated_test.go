@@ -21,7 +21,7 @@ package manager_test
 import (
 	"github.com/Hamzaahmed742/relay_cluster/ordermanager/manager"
 	"github.com/Hamzaahmed742/relay_cluster/test"
-	"github.com/Loopring/relay-lib/types"
+	"github.com/expanse-org/relay-lib/types"
 	"github.com/ethereum/go-ethereum/common"
 	"math/big"
 	"testing"
