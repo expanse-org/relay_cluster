@@ -183,17 +183,17 @@ func getTransactionJsonResult(view *txtyp.TransactionView, entity *txtyp.Transac
 		err = res.FromCutoffPairEntity(entity)
 
 	case txtyp.TX_TYPE_CONVERT_INCOME:
-		if view.Symbol == txtyp.SYMBOL_WETH {
-			err = res.FromWethDepositEntity(entity)
+		if view.Symbol == txtyp.SYMBOL_WEXP {
+			err = res.FromWexpDepositEntity(entity)
 		} else {
-			err = res.FromWethWithdrawalEntity(entity)
+			err = res.FromWexpWithdrawalEntity(entity)
 		}
 
 	case txtyp.TX_TYPE_CONVERT_OUTCOME:
-		if view.Symbol == txtyp.SYMBOL_WETH {
-			err = res.FromWethWithdrawalEntity(entity)
+		if view.Symbol == txtyp.SYMBOL_WEXP {
+			err = res.FromWexpWithdrawalEntity(entity)
 		} else {
-			err = res.FromWethDepositEntity(entity)
+			err = res.FromWexpDepositEntity(entity)
 		}
 
 	case txtyp.TX_TYPE_SEND, txtyp.TX_TYPE_RECEIVE:

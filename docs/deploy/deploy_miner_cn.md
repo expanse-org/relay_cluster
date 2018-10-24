@@ -51,7 +51,7 @@
 ...
 [market_util]
     token_file = "/opt/loopring/miner/config/tokens.json"
-    old_version_weth_address = "0x88699e7fee2da0462981a08a15a3b940304cc516"
+    old_version_wexp_address = "0x88699e7fee2da0462981a08a15a3b940304cc516"
 ...
 [data_source]
     type = "motan"

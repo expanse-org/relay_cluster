@@ -114,8 +114,8 @@ func (om *OrderManagerImpl) Start() {
 	eventemitter.On(eventemitter.CutoffPair, om.cutoffPairWatcher)
 
 	eventemitter.On(eventemitter.Approve, om.approveWatcher)
-	eventemitter.On(eventemitter.WethDeposit, om.depositWatcher)
-	eventemitter.On(eventemitter.WethWithdrawal, om.withdrawalWatcher)
+	eventemitter.On(eventemitter.WexpDeposit, om.depositWatcher)
+	eventemitter.On(eventemitter.WexpWithdrawal, om.withdrawalWatcher)
 	eventemitter.On(eventemitter.Transfer, om.transferWatcher)
 	eventemitter.On(eventemitter.EthTransfer, om.ethTransferWatcher)
 	eventemitter.On(eventemitter.UnsupportedContract, om.unsupportedContractWatcher)
@@ -134,8 +134,8 @@ func (om *OrderManagerImpl) Stop() {
 	eventemitter.Un(eventemitter.CutoffPair, om.cutoffPairWatcher)
 
 	eventemitter.On(eventemitter.Approve, om.approveWatcher)
-	eventemitter.On(eventemitter.WethDeposit, om.depositWatcher)
-	eventemitter.On(eventemitter.WethWithdrawal, om.withdrawalWatcher)
+	eventemitter.On(eventemitter.WexpDeposit, om.depositWatcher)
+	eventemitter.On(eventemitter.WexpWithdrawal, om.withdrawalWatcher)
 	eventemitter.On(eventemitter.Transfer, om.transferWatcher)
 	eventemitter.On(eventemitter.EthTransfer, om.ethTransferWatcher)
 	eventemitter.On(eventemitter.UnsupportedContract, om.unsupportedContractWatcher)
@@ -197,9 +197,9 @@ func (om *OrderManagerImpl) HandleOrderCorrelatedEvent(input eventemitter.EventD
 	switch event := input.(type) {
 	case *types.ApprovalEvent:
 		txinfo = event.TxInfo
-	case *types.WethDepositEvent:
+	case *types.WexpDepositEvent:
 		txinfo = event.TxInfo
-	case *types.WethWithdrawalEvent:
+	case *types.WexpWithdrawalEvent:
 		txinfo = event.TxInfo
 	case *types.TransferEvent:
 		txinfo = event.TxInfo

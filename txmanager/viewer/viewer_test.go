@@ -57,7 +57,7 @@ func TestTransactionViewImpl_GetAllTransactions(t *testing.T) {
 	viewer.NewTxView(test.Rds())
 
 	owner := "0xb1018949b241D76A1AB2094f473E9bEfeAbB5Ead"
-	symbol := "weth"
+	symbol := "wexp"
 	status := "all"
 	typ := "all"
 

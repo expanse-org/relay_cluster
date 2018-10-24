@@ -228,7 +228,7 @@ params: [{
   "side" : "buy",
   "orderType" : "market",
   "delegateAddress" : "0x5567ee920f7E62274284985D793344351A00142B",
-  "market" : "coss-weth",
+  "market" : "coss-wexp",
   "pageIndex" : 2,
   "pageSize" : 40
 }]
@@ -1117,7 +1117,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"loopring_getTransactions","param
           "hash":"0xa226639a5852df7a61a19a473a5f6feb98be5247077a7b22b8c868178772d01e",
           "blockNumber":5029675,
           "value":"0x0000000a7640001",
-          "type":"WRAP", // eth -> weth
+          "type":"WRAP", // eth -> wexp
           "status":"PENDING"
       }
     ],
@@ -1883,7 +1883,7 @@ params: {
       "hash":"0xa226639a5852df7a61a19a473a5f6feb98be5247077a7b22b8c868178772d01e",
       "blockNumber":5029675,
       "value":"0x0000000a7640001",
-      "type":"convert", // eth -> weth
+      "type":"convert", // eth -> wexp
       "status":"PENDING"
   },{}...
 ]
@@ -2116,7 +2116,7 @@ params: {
       "hash":"0xa226639a5852df7a61a19a473a5f6feb98be5247077a7b22b8c868178772d01e",
       "blockNumber":5029675,
       "value":"0x0000000a7640001",
-      "type":"convert", // eth -> weth
+      "type":"convert", // eth -> wexp
       "status":"PENDING"
   },{}...
 ]

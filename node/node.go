@@ -200,7 +200,7 @@ func (n *Node) registerGlobalMarket() {
 
 func (n *Node) registerWalletService() {
 	n.walletService = *gateway.NewWalletService(n.trendManager, n.orderViewer,
-		n.accountManager, n.marketCapProvider, n.tickerCollector, n.rdsService, n.globalConfig.Market.OldVersionWethAddress, n.globalMarket)
+		n.accountManager, n.marketCapProvider, n.tickerCollector, n.rdsService, n.globalConfig.Market.OldVersionWexpAddress, n.globalMarket)
 }
 
 func (n *Node) registerJsonRpcService() {

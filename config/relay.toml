@@ -79,7 +79,7 @@ title = "miner"
 
 [market]
     token_file = "/opt/loopring/relay/config/tokens.json"
-    old_version_weth_address = "0x5281a56AeB812A11a4c00003317dF25682AbEB48"
+    old_version_wexp_address = "0x5281a56AeB812A11a4c00003317dF25682AbEB48"
 
 [market_cap]
         base_url = "https://api.coinmarketcap.com/v2/ticker/?convert=%s&start=%d&limit=%d"

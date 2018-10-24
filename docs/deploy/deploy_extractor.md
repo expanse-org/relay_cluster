@@ -43,7 +43,7 @@ Make the following necessary modifications based on `Loopring/extractor/config/e
         currency = "CNY"
 [market]
     token_file = "/opt/loopring/extractor/config/tokens.json"
-    old_version_weth_address = "0x2956356cd2a2bf3202f771f50d3d14a367b48070"
+    old_version_wexp_address = "0x2956356cd2a2bf3202f771f50d3d14a367b48070"
 ...
 #Zk intranet IP address
 [zk_lock]

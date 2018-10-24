@@ -408,11 +408,11 @@ type WalletServiceImpl struct {
 	tickerCollector market.CollectorImpl
 	globalMarket    market.GlobalMarket
 	rds             *dao.RdsService
-	oldWethAddress  string
+	oldWexpAddress  string
 }
 
 func NewWalletService(trendManager market.TrendManager, orderViewer viewer.OrderViewer, accountManager accountmanager.AccountManager,
-	capProvider marketcap.MarketCapProvider, collector market.CollectorImpl, rds *dao.RdsService, oldWethAddress string, globalMarket market.GlobalMarket) *WalletServiceImpl {
+	capProvider marketcap.MarketCapProvider, collector market.CollectorImpl, rds *dao.RdsService, oldWexpAddress string, globalMarket market.GlobalMarket) *WalletServiceImpl {
 	w := &WalletServiceImpl{}
 	w.trendManager = trendManager
 	w.orderViewer = orderViewer
@@ -420,7 +420,7 @@ func NewWalletService(trendManager market.TrendManager, orderViewer viewer.Order
 	w.marketCap = capProvider
 	w.tickerCollector = collector
 	w.rds = rds
-	w.oldWethAddress = oldWethAddress
+	w.oldWexpAddress = oldWexpAddress
 	w.globalMarket = globalMarket
 	return w
 }
@@ -604,8 +604,8 @@ func (w *WalletServiceImpl) NotifyTransactionSubmitted(txNotify TxNotify) (resul
 	return tx.Hash, nil
 }
 
-func (w *WalletServiceImpl) GetOldVersionWethBalance(owner SingleOwner) (res string, err error) {
-	b, err := loopringaccessor.Erc20Balance(common.HexToAddress(w.oldWethAddress), common.HexToAddress(owner.Owner), "latest")
+func (w *WalletServiceImpl) GetOldVersionWexpBalance(owner SingleOwner) (res string, err error) {
+	b, err := loopringaccessor.Erc20Balance(common.HexToAddress(w.oldWexpAddress), common.HexToAddress(owner.Owner), "latest")
 	if err != nil {
 		return
 	} else {

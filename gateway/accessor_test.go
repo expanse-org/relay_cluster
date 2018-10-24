@@ -37,7 +37,7 @@ var (
 	account1         = test.Entity().Accounts[0].Address
 	account2         = test.Entity().Accounts[1].Address
 	lrcTokenAddress  = util.AllTokens["LRC"].Protocol
-	wethTokenAddress = util.AllTokens["WEXP"].Protocol
+	wexpTokenAddress = util.AllTokens["WEXP"].Protocol
 	delegateAddress  = test.Delegate()
 	gas              = big.NewInt(200000)
 	gasPrice         = big.NewInt(21000000000)
@@ -47,56 +47,56 @@ func TestEthNodeAccessor_SetBalance(t *testing.T) {
 	test.SetTokenBalances()
 }
 
-func TestEthNodeAccessor_WethDeposit(t *testing.T) {
+func TestEthNodeAccessor_WexpDeposit(t *testing.T) {
 	account := account1
-	wethAddr := wethTokenAddress
+	wexpAddr := wexpTokenAddress
 	amount := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(2))
-	callMethod := accessor.ContractSendTransactionMethod("latest", test.WethAbi(), wethAddr)
+	callMethod := accessor.ContractSendTransactionMethod("latest", test.WexpAbi(), wexpAddr)
 
-	hash, _, err := callMethod(account, contract.METHOD_WETH_DEPOSIT, gas, gasPrice, amount)
+	hash, _, err := callMethod(account, contract.METHOD_WEXP_DEPOSIT, gas, gasPrice, amount)
 	if nil != err {
-		t.Fatalf("call method weth-deposit error:%s", err.Error())
+		t.Fatalf("call method wexp-deposit error:%s", err.Error())
 	}
 
 	if err := sendPendingTx(hash); err != nil {
 		t.Fatalf("send tx err:%s", err.Error())
 	}
-	t.Logf("weth-deposit result:%s", hash)
+	t.Logf("wexp-deposit result:%s", hash)
 }
 
-func TestEthNodeAccessor_WethWithdrawal(t *testing.T) {
+func TestEthNodeAccessor_WexpWithdrawal(t *testing.T) {
 	account := account1
-	wethAddr := wethTokenAddress
+	wexpAddr := wexpTokenAddress
 	amount := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(1))
-	callMethod := accessor.ContractSendTransactionMethod("latest", test.WethAbi(), wethAddr)
+	callMethod := accessor.ContractSendTransactionMethod("latest", test.WexpAbi(), wexpAddr)
 
 	hash, _, err := callMethod(account, "withdraw", gas, gasPrice, nil, amount)
 	if nil != err {
-		t.Fatalf("call method weth-withdraw error:%s", err.Error())
+		t.Fatalf("call method wexp-withdraw error:%s", err.Error())
 	}
 
 	if err := sendPendingTx(hash); err != nil {
 		t.Fatalf("send tx err:%s", err.Error())
 	}
 
-	t.Logf("weth-withdraw result:%s", hash)
+	t.Logf("wexp-withdraw result:%s", hash)
 }
 
-func TestEthNodeAccessor_WethTransfer(t *testing.T) {
+func TestEthNodeAccessor_WexpTransfer(t *testing.T) {
 	from := account1
 	to := account2
-	wethAddr := wethTokenAddress
+	wexpAddr := wexpTokenAddress
 	amount := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(1))
 
-	callMethod := accessor.ContractSendTransactionMethod("latest", test.WethAbi(), wethAddr)
+	callMethod := accessor.ContractSendTransactionMethod("latest", test.WexpAbi(), wexpAddr)
 	hash, _, err := callMethod(from, "transfer", gas, gasPrice, nil, to, amount)
 	if nil != err {
-		t.Fatalf("call method weth-transfer error:%s", err.Error())
+		t.Fatalf("call method wexp-transfer error:%s", err.Error())
 	}
 	if err := sendPendingTx(hash); err != nil {
 		t.Fatalf("send tx err:%s", err.Error())
 	}
-	t.Logf("weth-transfer result:%s", hash)
+	t.Logf("wexp-transfer result:%s", hash)
 }
 
 func TestEthNodeAccessor_EthTransfer(t *testing.T) {
@@ -187,7 +187,7 @@ func TestEthNodeAccessor_Approval(t *testing.T) {
 
 func TestEthNodeAccessor_Allowance(t *testing.T) {
 	/*accounts := []common.Address{account1, account2}
-	tokens := []common.Address{lrcTokenAddress, wethTokenAddress}*/
+	tokens := []common.Address{lrcTokenAddress, wexpTokenAddress}*/
 	accounts := []common.Address{common.HexToAddress("0x750ad4351bb728cec7d639a9511f9d6488f1e259"), common.HexToAddress("0x251f3bd45b06a8b29cb6d171131e192c1254fec1")}
 	tokens := []common.Address{common.HexToAddress("0x639687b7f8501f174356d3acb1972f749021ccd0"), common.HexToAddress("0xe1C541BA900cbf212Bc830a5aaF88aB499931751")}
 
@@ -293,7 +293,7 @@ func TestEthNodeAccessor_CutoffPair(t *testing.T) {
 	account := common.HexToAddress("0xb1018949b241D76A1AB2094f473E9bEfeAbB5Ead")
 	cutoff := big.NewInt(1531107175)
 	token1 := lrcTokenAddress
-	token2 := wethTokenAddress
+	token2 := wexpTokenAddress
 
 	callMethod := accessor.ContractSendTransactionMethod("latest", test.LprAbi(), test.Protocol())
 	result, _, err := callMethod(account, contract.METHOD_CUTOFF_PAIR, gas, gasPrice, nil, token1, token2, cutoff)
@@ -309,7 +309,7 @@ func TestEthNodeAccessor_CutoffPair(t *testing.T) {
 func TestEthNodeAccessor_GetCutoffPair(t *testing.T) {
 	owner := accounts.Account{Address: account2}
 	token1 := lrcTokenAddress
-	token2 := wethTokenAddress
+	token2 := wexpTokenAddress
 
 	var res types.Big
 	if err := loopringaccessor.GetCutoffPair(&res, test.Protocol(), owner.Address, token1, token2, "latest"); err != nil {

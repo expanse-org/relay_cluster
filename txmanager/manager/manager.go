@@ -38,8 +38,8 @@ type TransactionManager struct {
 	orderCancelledEventWatcher      *eventemitter.Watcher
 	cutoffAllEventWatcher           *eventemitter.Watcher
 	cutoffPairEventWatcher          *eventemitter.Watcher
-	wethDepositEventWatcher         *eventemitter.Watcher
-	wethWithdrawalEventWatcher      *eventemitter.Watcher
+	wexpDepositEventWatcher         *eventemitter.Watcher
+	wexpWithdrawalEventWatcher      *eventemitter.Watcher
 	transferEventWatcher            *eventemitter.Watcher
 	ethTransferEventWatcher         *eventemitter.Watcher
 	unsupportedContractEventWatcher *eventemitter.Watcher
@@ -74,11 +74,11 @@ func (tm *TransactionManager) Start() {
 	tm.cutoffPairEventWatcher = &eventemitter.Watcher{Concurrent: false, Handle: tm.SaveCutoffPairEvent}
 	eventemitter.On(eventemitter.CutoffPair, tm.cutoffPairEventWatcher)
 
-	tm.wethDepositEventWatcher = &eventemitter.Watcher{Concurrent: false, Handle: tm.SaveWethDepositEvent}
-	eventemitter.On(eventemitter.WethDeposit, tm.wethDepositEventWatcher)
+	tm.wexpDepositEventWatcher = &eventemitter.Watcher{Concurrent: false, Handle: tm.SaveWexpDepositEvent}
+	eventemitter.On(eventemitter.WexpDeposit, tm.wexpDepositEventWatcher)
 
-	tm.wethWithdrawalEventWatcher = &eventemitter.Watcher{Concurrent: false, Handle: tm.SaveWethWithdrawalEvent}
-	eventemitter.On(eventemitter.WethWithdrawal, tm.wethWithdrawalEventWatcher)
+	tm.wexpWithdrawalEventWatcher = &eventemitter.Watcher{Concurrent: false, Handle: tm.SaveWexpWithdrawalEvent}
+	eventemitter.On(eventemitter.WexpWithdrawal, tm.wexpWithdrawalEventWatcher)
 
 	tm.transferEventWatcher = &eventemitter.Watcher{Concurrent: false, Handle: tm.SaveTransferEvent}
 	eventemitter.On(eventemitter.Transfer, tm.transferEventWatcher)
@@ -101,8 +101,8 @@ func (tm *TransactionManager) Stop() {
 	eventemitter.Un(eventemitter.CancelOrder, tm.orderCancelledEventWatcher)
 	eventemitter.Un(eventemitter.CutoffAll, tm.cutoffAllEventWatcher)
 	eventemitter.Un(eventemitter.CutoffPair, tm.cutoffPairEventWatcher)
-	eventemitter.Un(eventemitter.WethDeposit, tm.wethDepositEventWatcher)
-	eventemitter.Un(eventemitter.WethWithdrawal, tm.wethWithdrawalEventWatcher)
+	eventemitter.Un(eventemitter.WexpDeposit, tm.wexpDepositEventWatcher)
+	eventemitter.Un(eventemitter.WexpWithdrawal, tm.wexpWithdrawalEventWatcher)
 	eventemitter.Un(eventemitter.Transfer, tm.transferEventWatcher)
 	eventemitter.Un(eventemitter.EthTransfer, tm.ethTransferEventWatcher)
 	eventemitter.Un(eventemitter.UnsupportedContract, tm.unsupportedContractEventWatcher)
@@ -214,15 +214,15 @@ func (tm *TransactionManager) SaveCutoffPairEvent(input eventemitter.EventData) 
 	return tm.saveTransaction(&entity, list)
 }
 
-func (tm *TransactionManager) SaveWethDepositEvent(input eventemitter.EventData) error {
-	event := input.(*types.WethDepositEvent)
+func (tm *TransactionManager) SaveWexpDepositEvent(input eventemitter.EventData) error {
+	event := input.(*types.WexpDepositEvent)
 
 	var entity txtyp.TransactionEntity
-	if err := entity.FromWethDepositEvent(event); err != nil {
+	if err := entity.FromWexpDepositEvent(event); err != nil {
 		return err
 	}
 
-	list, err := txtyp.WethDepositView(event)
+	list, err := txtyp.WexpDepositView(event)
 	if err != nil {
 		return err
 	}
@@ -230,14 +230,14 @@ func (tm *TransactionManager) SaveWethDepositEvent(input eventemitter.EventData)
 	return tm.saveTransaction(&entity, list)
 }
 
-func (tm *TransactionManager) SaveWethWithdrawalEvent(input eventemitter.EventData) error {
-	event := input.(*types.WethWithdrawalEvent)
+func (tm *TransactionManager) SaveWexpWithdrawalEvent(input eventemitter.EventData) error {
+	event := input.(*types.WexpWithdrawalEvent)
 
 	var entity txtyp.TransactionEntity
-	if err := entity.FromWethWithdrawalEvent(event); err != nil {
+	if err := entity.FromWexpWithdrawalEvent(event); err != nil {
 		return err
 	}
-	list, err := txtyp.WethWithdrawalView(event)
+	list, err := txtyp.WexpWithdrawalView(event)
 	if err != nil {
 		return err
 	}

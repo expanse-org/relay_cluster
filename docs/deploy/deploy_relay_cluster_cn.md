@@ -43,7 +43,7 @@
         currency = "CNY"
 [market]
     token_file = "/opt/loopring/relay/config/tokens.json"
-    old_version_weth_address = "0x2956356cd2a2bf3202f771f50d3d14a367b48070"
+    old_version_wexp_address = "0x2956356cd2a2bf3202f771f50d3d14a367b48070"
 #zk内网ip地址
 [zk_lock]
     zk_servers = "xx.xx.xx.xx:2181,xx.xx.xx.xx:2181,xx.xx.xx.xx:2181"
