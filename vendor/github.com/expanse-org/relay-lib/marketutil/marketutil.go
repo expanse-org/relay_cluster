@@ -41,14 +41,13 @@ type TokenPair struct {
 	TokenB common.Address
 }
 
-var MarketBaseOrder = map[string]uint8{"BAR": 5, "LRC": 10, "WEXP": 20, "USDT": 30, "TUSD": 40}
+var MarketBaseOrder = map[string]uint8{"BAR": 5, "LRC": 10, "WEXP": 20, "DAI": 30}
 
 type TokenStandard uint8
 
 func StringToFloat(token string, amount string) (result float64, err error) {
 	rst, _ := new(big.Rat).SetString(amount)
-	ts, err := AddressToToken(common.HexToAddress(token))
-	if err != nil {
+	ts, err := AddressToToken(common.HexToAddress(token)); if err != nil {
 		return result, err
 	}
 	weiRat := new(big.Rat).SetInt64(ts.Decimals.Int64())
@@ -63,15 +62,11 @@ var (
 	SupportMarkets map[string]types.Token // token symbol to contract hex address
 	AllMarkets     []string
 	AllTokenPairs  []TokenPair
-	DisplayMarkets []types.Market
 	SymbolTokenMap map[common.Address]string
-	MarketsDecimal map[string]types.MarketDecimal
 )
 
 type MarketOptions struct {
 	TokenFile             string
-	MarketFile            string
-	DecimalFile           string
 	OldVersionWexpAddress string
 }
 
@@ -80,10 +75,7 @@ func StartRefreshCron(option *MarketOptions) {
 	mktCron.AddFunc("1 0/10 * * * *", func() {
 		log.Info("start market util refresh.....")
 		SupportTokens, SupportMarkets, AllTokens, AllMarkets, AllTokenPairs, SymbolTokenMap = getTokenAndMarketFromDB(option.TokenFile)
-		DisplayMarkets = getDisplayMarketsFromDB(option.MarketFile)
-		MarketsDecimal = getMarketsDecimal(option.DecimalFile)
 	})
-
 	mktCron.Start()
 }
 
@@ -126,8 +118,8 @@ func getTokenAndMarketFromDB(tokenfile string) (
 	symbolTokenMap map[common.Address]string) {
 
 	supportTokens = make(map[string]types.Token)
-	supportMarkets = make(map[string]types.Token)
 	allTokens = make(map[string]types.Token)
+	supportMarkets = make(map[string]types.Token)
 	allMarkets = make([]string, 0)
 	allTokenPairs = make([]TokenPair, 0)
 	symbolTokenMap = make(map[common.Address]string)
@@ -201,55 +193,15 @@ func getTokenAndMarketFromDB(tokenfile string) (
 	return
 }
 
-func getDisplayMarketsFromDB(marketfile string) (displayMarkets []types.Market) {
-	fn, err := os.Open(marketfile)
-	if err != nil {
-		log.Fatalf("market util load markets failed:%s", err.Error())
-	}
-	bs, err := ioutil.ReadAll(fn)
-	if err != nil {
-		log.Fatalf("market util read markets json file failed:%s", err.Error())
-	}
-	if err := json.Unmarshal(bs, &displayMarkets); err != nil {
-		log.Fatalf("market util unmarshal tokens failed:%s", err.Error())
-	}
-	return
-}
-
-func getMarketsDecimal(decimalfile string) (marketsDecimal map[string]types.MarketDecimal) {
-
-	fn, err := os.Open(decimalfile)
-	if err != nil {
-		log.Fatalf("market util load market of decimal failed:%s", err.Error())
-	}
-
-	bs, err := ioutil.ReadAll(fn)
-	if err != nil {
-		log.Fatalf("market util read market of decimal json file failed:%s", err.Error())
-	}
-
-	mkDecimals := make([]types.MarketDecimal, 0)
-	if err := json.Unmarshal(bs, &mkDecimals); err != nil {
-		log.Fatalf("market util unmarshal tokens failed:%s", err.Error())
-	}
-
-	marketsDecimal = make(map[string]types.MarketDecimal)
-	for _, v := range mkDecimals {
-		marketsDecimal[v.Market] = v
-	}
-	return
-}
-
 func Initialize(options *MarketOptions) {
 
 	SupportTokens = make(map[string]types.Token)
 	SupportMarkets = make(map[string]types.Token)
 	AllTokens = make(map[string]types.Token)
 	SymbolTokenMap = make(map[common.Address]string)
-	DisplayMarkets = make([]types.Market, 0)
 
 	SupportTokens, SupportMarkets, AllTokens, AllMarkets, AllTokenPairs, SymbolTokenMap = getTokenAndMarketFromDB(options.TokenFile)
-	DisplayMarkets = getDisplayMarketsFromDB(options.MarketFile)
+
 	// StartRefreshCron(rds)
 
 	//tokenRegisterWatcher := &eventemitter.Watcher{false, TokenRegister}
@@ -341,7 +293,7 @@ func UnWrap(market string) (s, b string) {
 
 func UnWrapToAddress(market string) (s, b common.Address) {
 	sa, sb := UnWrap(market)
-	return AliasToAddress(sa), AliasToAddress(sb)
+	return common.HexToAddress(sa), common.HexToAddress(sb)
 }
 
 func IsSupportedMarket(market string) bool {
@@ -356,10 +308,6 @@ func isSupportedToken(token string) bool {
 
 func AliasToAddress(t string) common.Address {
 	return AllTokens[t].Protocol
-}
-
-func AliasToSource(t string) string {
-	return AllTokens[t].Source
 }
 
 func AddressToAlias(t string) string {

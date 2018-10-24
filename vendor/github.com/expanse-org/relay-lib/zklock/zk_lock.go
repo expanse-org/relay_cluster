@@ -83,7 +83,6 @@ func IsLockInitialed() bool {
 	return nil != zl
 }
 
-
 func CreatePath(path string) (string, error) {
 	isExist, _, err := ZkClient.Exists(path)
 	if err != nil {

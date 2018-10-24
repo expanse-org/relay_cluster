@@ -50,9 +50,7 @@ type Cache interface {
 	HExists(key string, field []byte) (bool, error)
 
 	SAdd(key string, ttl int64, members ...[]byte) error
-
 	SCard(key string) (int64, error)
-
 	SRem(key string, members ...[]byte) (int64, error)
 
 	SMembers(key string) ([][]byte, error)
@@ -66,10 +64,7 @@ type Cache interface {
 	ExpireAt(key string, expireAt int64) error
 
 	ZRange(key string, start, stop int64, withScores bool) ([][]byte, error)
-
 	ZRemRangeByScore(key string, start, stop int64) (int64, error)
-
-	ZRem(key string, members ...[]byte) (int64, error)
 }
 
 func NewCache(cfg interface{}) {
@@ -136,10 +131,6 @@ func ZRange(key string, start, stop int64, withScores bool) ([][]byte, error) {
 }
 func ZRemRangeByScore(key string, start, stop int64) (int64, error) {
 	return cache.ZRemRangeByScore(key, start, stop)
-}
-
-func ZRem(key string, members ...[]byte) (int64, error) {
-	return cache.ZRem(key, members...)
 }
 
 func Incr(key string) (int64, error) {

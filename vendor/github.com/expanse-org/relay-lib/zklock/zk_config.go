@@ -52,7 +52,7 @@ func RegisterConfigHandler(namespace string, key string, action HandlerFunc) err
 		go func() {
 			for {
 				select {
-				case evt := <- ch:
+				case evt := <-ch:
 					if evt.Type == zk.EventNodeDataChanged {
 						if data, _, chx, err := ZkClient.GetW(keyPath); err != nil {
 							log.Errorf("Get config %s data failed with error : %s", keyPath, err.Error())

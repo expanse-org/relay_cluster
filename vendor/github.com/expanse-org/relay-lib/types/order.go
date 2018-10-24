@@ -47,8 +47,6 @@ const (
 const (
 	ORDER_TYPE_MARKET = "market_order"
 	ORDER_TYPE_P2P    = "p2p_order"
-	P2P_SIDE_MAKER    = "maker"
-	P2P_SIDE_TAKER    = "taker"
 )
 
 //go:generate gencodec -type Order -field-override orderMarshaling -out gen_order_json.go
@@ -78,8 +76,6 @@ type Order struct {
 	PowNonce              uint64                     `json:"powNonce"`
 	Side                  string                     `json:"side"`
 	OrderType             string                     `json:"orderType"`
-	P2PSide               string                     `json:"p2pSide"`
-	SourceId              string                     `json:"sourceId"`
 }
 
 type orderMarshaling struct {
@@ -117,8 +113,6 @@ type OrderJsonRequest struct {
 	PowNonce              uint64         `json:"powNonce"`
 	Side                  string         `json:"side"`
 	OrderType             string         `json:"orderType"`
-	P2PSide               string         `json:"p2pSide"`
-	SourceId              string         `json:"sourceId"`
 }
 
 type orderJsonRequestMarshaling struct {
@@ -356,11 +350,5 @@ func ToOrder(request *OrderJsonRequest) *Order {
 	order.WalletAddress = request.WalletAddress
 	order.PowNonce = request.PowNonce
 	order.OrderType = request.OrderType
-	order.P2PSide = request.P2PSide
-	if "" == request.SourceId {
-		order.SourceId = "unknown"
-	} else {
-		order.SourceId = request.SourceId
-	}
 	return order
 }

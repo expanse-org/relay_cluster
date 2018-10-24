@@ -103,9 +103,9 @@ func (d *DefaultProvider) Call(request motan.Request) (res motan.Response) {
 		values := make([]interface{}, 0, inNum)
 		for i := 0; i < inNum; i++ {
 			// TODO how to reflect value pointer???
-			//vlog.Infof("method args %d type %s", i, m.Type().In(i).String())
+			vlog.Infof("method args %d type %s", i, m.Type().In(i).String())
 			data := (reflect.New(m.Type().In(i).Elem())).Interface()
-			//vlog.Infof("param %d type %s", i, reflect.ValueOf(data).String())
+			vlog.Infof("param %d type %s", i, reflect.ValueOf(data).String())
 			values = append(values, data)
 		}
 		err := request.ProcessDeserializable(values)
@@ -121,7 +121,7 @@ func (d *DefaultProvider) Call(request motan.Request) (res motan.Response) {
 	startTime := time.Now().UnixNano()
 	ret := m.Call(vs)
 	if cloudwatch.IsValid() {
-		cloudwatch.PutResponseTimeMetric(methodName, float64((time.Now().UnixNano() - startTime) / int64(time.Millisecond)))
+		cloudwatch.PutResponseTimeMetric(methodName, float64((time.Now().UnixNano() - startTime) / 1000))
 	}
 	mres := &motan.MotanResponse{RequestID: request.GetRequestID()}
 	if len(ret) > 0 { // only use first return value.
