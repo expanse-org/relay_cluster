@@ -35,7 +35,7 @@ title = "miner"
     port = "8083"
 
 [redis]
-    host = "34.228.161.302"
+    host = "34.228.161.30"
     port = "6379"
     password = ""
     idle_timeout = 20
