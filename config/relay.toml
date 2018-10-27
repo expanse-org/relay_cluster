@@ -78,7 +78,7 @@ title = "miner"
         "v1.5" = "0xa58056ec3726a7dfb3c407a6eb67800a16f7c560"
 
 [market]
-    token_file = "/opt/loopring/relay/config/tokens.json"
+    token_file = "config/tokens.json"
     old_version_wexp_address = "0x5281a56AeB812A11a4c00003317dF25682AbEB48"
 
 [market_cap]
@@ -118,7 +118,7 @@ title = "miner"
     brokers = ["172.31.37.241:9092"]
 
 [motan_server]
-    conf_file = "/opt/loopring/relay/config/motan_server.yaml"
+    conf_file = "config/motan_server.yaml"
 
 [my_token]
     app_id = "13gd_-yxB_yUiGyL"
