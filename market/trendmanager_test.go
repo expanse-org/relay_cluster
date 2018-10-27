@@ -56,7 +56,7 @@ package market_test
 //	orderManager := ordermanager.NewOrderManager(&globalConfig.OrderManager, rdsService, userManager, marketCapProvider)
 //	gateway.Initialize(&globalConfig.GatewayFilters, &globalConfig.Gateway, &globalConfig.Ipfs, orderManager, marketCapProvider)
 //	baseFilter := &gateway.BaseFilter{
-//		MinLrcFee:             big.NewInt(globalConfig.GatewayFilters.BaseFilter.MinLrcFee),
+//		MinPexFee:             big.NewInt(globalConfig.GatewayFilters.BaseFilter.MinPexFee),
 //		MaxPrice:              big.NewInt(globalConfig.GatewayFilters.BaseFilter.MaxPrice),
 //		MinSplitPercentage:    globalConfig.GatewayFilters.BaseFilter.MinSplitPercentage,
 //		MaxSplitPercentage:    globalConfig.GatewayFilters.BaseFilter.MaxSplitPercentage,
@@ -85,7 +85,7 @@ package market_test
 //
 //	order := types.Order{}
 //	order.AmountS = big.NewInt(1000000)
-//	order.LrcFee = big.NewInt(500000000000000000)
+//	order.PexFee = big.NewInt(500000000000000000)
 //	order.TokenS = util.AllTokens["RDN"].Protocol
 //	order.TokenB = util.AllTokens["WEXP"].Protocol
 //	amountS := big.NewInt(0)
@@ -101,10 +101,10 @@ package market_test
 //	fmt.Println(bf.Filter(&order))
 //
 //	//fmt.Println(tm.GetTrends("RDN-WEXP", "1Hr"))
-//	//fmt.Println(tm.GetTrends("LRC-WEXP", "1Hr"))
-//	//fmt.Println(tm.GetTrends("LRC-WEXP", "2Hr"))
+//	//fmt.Println(tm.GetTrends("PEX-WEXP", "1Hr"))
+//	//fmt.Println(tm.GetTrends("PEX-WEXP", "2Hr"))
 //	//fill := &types.OrderFilledEvent{}
-//	//fill.Market = "LRC-WEXP"
+//	//fill.Market = "PEX-WEXP"
 //	//fill.TxInfo.Protocol = common.HexToAddress("0xC01172a87f6cC20E1E3b9aD13a9E715Fbc2D5AA9")
 //	//fill.Owner = common.HexToAddress("0x750aD4351bB728ceC7d639A9511F9D6488f1E259")
 //	//fill.RingIndex = big.NewInt(26)
@@ -113,8 +113,8 @@ package market_test
 //	//fill.TokenB = common.HexToAddress("0x88699e7FEE2Da0462981a08a15A3B940304CC516")
 //	//fill.SplitS = big.NewInt(0)
 //	//fill.SplitB = big.NewInt(0)
-//	//fill.LrcReward = big.NewInt(0)
-//	//fill.LrcFee = big.NewInt(0)
+//	//fill.PexReward = big.NewInt(0)
+//	//fill.PexFee = big.NewInt(0)
 //	//fill.AmountS = big.NewInt(11000000000000)
 //	//fill.AmountB = big.NewInt(22000000000000000)
 //	//fill.OrderHash = common.HexToHash("0xc9b1edd3af78055d565731846ca7f43d0fb1985898ac1c77b6a7723f7df5491e")
@@ -132,7 +132,7 @@ package market_test
 //	//time.Sleep(3 * time.Second)
 //	////tm.InsertTrend()
 //	//fmt.Println("xxxxxxxxxxx")
-//	//tds, _ := tm.GetTrends("LRC-WEXP", "2Hr")
+//	//tds, _ := tm.GetTrends("PEX-WEXP", "2Hr")
 //	//fmt.Println(tds)
 //	//fmt.Println(tm.GetTicker())
 //

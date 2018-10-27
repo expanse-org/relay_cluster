@@ -112,7 +112,7 @@ type OrderBookElement struct {
 	Size       float64 `json:"size"`
 	Amount     float64 `json:"amount"`
 	OrderHash  string  `json:"orderHash"`
-	LrcFee     float64 `json:"lrcFee"`
+	PexFee     float64 `json:"pexFee"`
 	SplitS     float64 `json:"splitS"`
 	SplitB     float64 `json:"splitB"`
 	ValidUntil int64   `json:"validUntil"`
@@ -207,7 +207,7 @@ type EstimatedAllocatedAllowanceQuery struct {
 
 type EstimatedAllocatedAllowanceResult struct {
 	AllocatedResult map[string]string `json:"allocatedResult"`
-	FrozenLrcFee    string `json: "frozenLrcFee"`
+	FrozenPexFee    string `json: "frozenPexFee"`
 }
 
 type TransactionQuery struct {
@@ -270,7 +270,7 @@ type RawOrderJsonResult struct {
 	ValidSince      string `json:"validSince"`
 	ValidUntil      string `json:"validUntil"` // 订单过期时间
 	//Salt                  string `json:"salt"`
-	LrcFee                string `json:"lrcFee"` // 交易总费用,部分成交的费用按该次撮合实际卖出代币额与比例计算
+	PexFee                string `json:"pexFee"` // 交易总费用,部分成交的费用按该次撮合实际卖出代币额与比例计算
 	BuyNoMoreThanAmountB  bool   `json:"buyNoMoreThanAmountB"`
 	MarginSplitPercentage string `json:"marginSplitPercentage"` // 不为0时支付给交易所的分润比例，否则视为100%
 	V                     string `json:"v"`
@@ -320,7 +320,7 @@ type RingMinedInfo struct {
 	FeeRecipient       string              `json:"feeRecipient"`
 	IsRinghashReserved bool                `json:"isRinghashReserved"`
 	BlockNumber        int64               `json:"blockNumber"`
-	TotalLrcFee        string              `json:"totalLrcFee"`
+	TotalPexFee        string              `json:"totalPexFee"`
 	TotalSplitFee      map[string]*big.Int `json:"totalSplitFee"`
 	TradeAmount        int                 `json:"tradeAmount"`
 	Time               int64               `json:"timestamp"`
@@ -344,7 +344,7 @@ type LatestFill struct {
 	Amount     float64 `json:"amount"`
 	Side       string  `json:"side"`
 	RingHash   string  `json:"ringHash"`
-	LrcFee     string  `json:"lrcFee"`
+	PexFee     string  `json:"pexFee"`
 	SplitS     string  `json:"splitS"`
 	SplitB     string  `json:"splitB"`
 }
@@ -986,19 +986,19 @@ func (w *WalletServiceImpl) GetEstimatedAllocatedAllowance(query EstimatedAlloca
 	return types.BigintToHex(amount), err
 }
 
-func (w *WalletServiceImpl) GetFrozenLRCFee(query SingleOwner) (frozenAmount string, err error) {
+func (w *WalletServiceImpl) GetFrozenPEXFee(query SingleOwner) (frozenAmount string, err error) {
 	statusSet := make([]types.OrderStatus, 0)
 	statusSet = append(statusSet, types.ORDER_NEW)
 	statusSet = append(statusSet, types.ORDER_PARTIAL)
 
 	owner := query.Owner
 
-	allLrcFee, err := w.orderViewer.GetFrozenLRCFee(common.HexToAddress(owner), statusSet)
+	allPexFee, err := w.orderViewer.GetFrozenPEXFee(common.HexToAddress(owner), statusSet)
 	if err != nil {
 		return "", err
 	}
 
-	return types.BigintToHex(allLrcFee), err
+	return types.BigintToHex(allPexFee), err
 }
 
 func (w *WalletServiceImpl) GetAllEstimatedAllocatedAmount(query EstimatedAllocatedAllowanceQuery) (result EstimatedAllocatedAllowanceResult, err error) {
@@ -1035,11 +1035,11 @@ func (w *WalletServiceImpl) GetAllEstimatedAllocatedAmount(query EstimatedAlloca
 		resultMap[k] = types.BigintToHex(v)
 	}
 
-	lrcFee, err := w.GetFrozenLRCFee(SingleOwner{query.Owner}); if err != nil {
+	pexFee, err := w.GetFrozenPEXFee(SingleOwner{query.Owner}); if err != nil {
 		return result, err
 	}
 
-	return EstimatedAllocatedAllowanceResult{resultMap, lrcFee}, err
+	return EstimatedAllocatedAllowanceResult{resultMap, pexFee}, err
 }
 
 func (w *WalletServiceImpl) getAllOrdersByOwner(owner, delegateAddress string) (orders []types.OrderState, err error) {
@@ -1412,8 +1412,8 @@ func (w *WalletServiceImpl) generateOrderBook(states []types.OrderState, isAsk b
 		o.OrderHash = s.RawOrder.Hash.Hex()
 		o.SplitS = fmtFloat(new(big.Rat).SetFrac(s.SplitAmountS, tokenSDecimal))
 		o.SplitB = fmtFloat(new(big.Rat).SetFrac(s.SplitAmountB, tokenBDecimal))
-		lrcToken := util.AllTokens["LRC"]
-		o.LrcFee = fmtFloat(new(big.Rat).SetFrac(s.RawOrder.LrcFee, lrcToken.Decimals))
+		pexToken := util.AllTokens["PEX"]
+		o.PexFee = fmtFloat(new(big.Rat).SetFrac(s.RawOrder.PexFee, pexToken.Decimals))
 		o.ValidUntil = s.RawOrder.ValidUntil.Int64()
 
 		price := *s.RawOrder.Price
@@ -1759,7 +1759,7 @@ func orderStateToJson(src types.OrderState) OrderJsonResult {
 	rawOrder.AmountB = types.BigintToHex(src.RawOrder.AmountB)
 	rawOrder.ValidSince = types.BigintToHex(src.RawOrder.ValidSince)
 	rawOrder.ValidUntil = types.BigintToHex(src.RawOrder.ValidUntil)
-	rawOrder.LrcFee = types.BigintToHex(src.RawOrder.LrcFee)
+	rawOrder.PexFee = types.BigintToHex(src.RawOrder.PexFee)
 	rawOrder.BuyNoMoreThanAmountB = src.RawOrder.BuyNoMoreThanAmountB
 	rawOrder.MarginSplitPercentage = types.BigintToHex(big.NewInt(int64(src.RawOrder.MarginSplitPercentage)))
 	rawOrder.V = types.BigintToHex(big.NewInt(int64(src.RawOrder.V)))
@@ -1792,7 +1792,7 @@ func fillDetail(ring dao.RingMinedEvent, fills []dao.FillEvent) (rst RingMinedDe
 	ringInfo.FeeRecipient = ring.FeeRecipient
 	ringInfo.IsRinghashReserved = ring.IsRinghashReserved
 	ringInfo.TradeAmount = ring.TradeAmount
-	ringInfo.TotalLrcFee = ring.TotalLrcFee
+	ringInfo.TotalPexFee = ring.TotalPexFee
 	ringInfo.TotalSplitFee = make(map[string]*big.Int)
 
 	for _, f := range fills {
@@ -1832,7 +1832,7 @@ func toLatestFill(f dao.FillEvent) (latestFill LatestFill, err error) {
 	rst.Price, _ = strconv.ParseFloat(fmt.Sprintf("%0.8f", price), 64)
 	rst.Side = f.Side
 	rst.RingHash = f.RingHash
-	rst.LrcFee = f.LrcFee
+	rst.PexFee = f.PexFee
 	rst.SplitS = f.SplitS
 	rst.SplitB = f.SplitB
 	var amount float64

@@ -468,9 +468,9 @@ var coreTags = map[uint32]uint16{
 	0x2ac0004c: 455, // ln-CG
 	0x2af00000: 456, // lo
 	0x2af000ae: 457, // lo-LA
-	0x2b600000: 458, // lrc
-	0x2b60009a: 459, // lrc-IQ
-	0x2b60009b: 460, // lrc-IR
+	0x2b600000: 458, // pex
+	0x2b60009a: 459, // pex-IQ
+	0x2b60009b: 460, // pex-IR
 	0x2b700000: 461, // lt
 	0x2b7000b5: 462, // lt-LT
 	0x2b900000: 463, // lu

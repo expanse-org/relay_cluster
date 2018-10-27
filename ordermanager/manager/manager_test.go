@@ -53,16 +53,16 @@ func TestFlexCancelOrder(t *testing.T) {
 func TestNewOrderEntity(t *testing.T) {
 	entity := test.Entity()
 
-	lrc := util.AllTokens["LRC"].Protocol
+	pex := util.AllTokens["PEX"].Protocol
 	eth := util.AllTokens["WEXP"].Protocol
 
 	account := entity.Accounts[0]
 
-	// 卖出0.1个eth， 买入300个lrc,lrcFee为20个lrc
+	// 卖出0.1个eth， 买入300个pex,pexFee为20个pex
 	amountS1, _ := new(big.Int).SetString("100000000000000000", 0)
 	amountB1, _ := new(big.Int).SetString("300000000000000000000", 0)
-	lrcFee1 := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(5)) // 20个lrc
-	order := test.CreateOrder(eth, lrc, account.Address, amountS1, amountB1, lrcFee1)
+	pexFee1 := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(5)) // 20个pex
+	order := test.CreateOrder(eth, pex, account.Address, amountS1, amountB1, pexFee1)
 	state := &types.OrderState{RawOrder: order}
 	if entity, err := manager.NewOrderEntity(state, nil); err != nil {
 		t.Fatalf(err.Error())

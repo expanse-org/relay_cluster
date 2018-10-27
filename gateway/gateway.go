@@ -56,8 +56,8 @@ type Filter interface {
 
 type GatewayFiltersOptions struct {
 	BaseFilter struct {
-		MinLrcFee             int64
-		MinLrcHold            int64
+		MinPexFee             int64
+		MinPexHold            int64
 		MaxPrice              int64
 		MinSplitPercentage    float64
 		MaxSplitPercentage    float64
@@ -87,8 +87,8 @@ func Initialize(filterOptions *GatewayFiltersOptions, options *GateWayOptions, o
 
 	// new base filter
 	baseFilter := &BaseFilter{
-		MinLrcFee:             big.NewInt(filterOptions.BaseFilter.MinLrcFee),
-		MinLrcHold:            filterOptions.BaseFilter.MinLrcHold,
+		MinPexFee:             big.NewInt(filterOptions.BaseFilter.MinPexFee),
+		MinPexHold:            filterOptions.BaseFilter.MinPexHold,
 		MaxPrice:              big.NewInt(filterOptions.BaseFilter.MaxPrice),
 		MinSplitPercentage:    filterOptions.BaseFilter.MinSplitPercentage,
 		MaxSplitPercentage:    filterOptions.BaseFilter.MaxSplitPercentage,
@@ -222,8 +222,8 @@ func generatePrice(order *types.Order) error {
 }
 
 type BaseFilter struct {
-	MinLrcFee             *big.Int
-	MinLrcHold            int64
+	MinPexFee             *big.Int
+	MinPexHold            int64
 	MinSplitPercentage    float64
 	MaxSplitPercentage    float64
 	MaxPrice              *big.Int
@@ -246,22 +246,22 @@ func (f *BaseFilter) filter(o *types.Order) (bool, error) {
 		return false, fmt.Errorf("market order auth private key not correct")
 	}
 
-	if o.TokenB != util.AliasToAddress("LRC") {
+	if o.TokenB != util.AliasToAddress("PEX") {
 		balances, err := accountmanager.GetBalanceWithSymbolResult(o.Owner)
 
 		if err != nil {
-			return false, fmt.Errorf("gateway,base filter,owner holds lrc less than %d ", f.MinLrcHold)
+			return false, fmt.Errorf("gateway,base filter,owner holds pex less than %d ", f.MinPexHold)
 		}
 
-		if b, ok := balances["LRC"]; ok {
-			lrcHold := big.NewInt(f.MinLrcHold)
-			lrcHold = lrcHold.Mul(lrcHold, util.AllTokens["LRC"].Decimals)
-			if b.Cmp(lrcHold) < 1 {
-				return false, fmt.Errorf("gateway,base filter,owner holds lrc less than %d ", f.MinLrcHold)
+		if b, ok := balances["PEX"]; ok {
+			pexHold := big.NewInt(f.MinPexHold)
+			pexHold = pexHold.Mul(pexHold, util.AllTokens["PEX"].Decimals)
+			if b.Cmp(pexHold) < 1 {
+				return false, fmt.Errorf("gateway,base filter,owner holds pex less than %d ", f.MinPexHold)
 			}
 
 		} else {
-			return false, fmt.Errorf("gateway,base filter,owner holds lrc less than %d ", f.MinLrcHold)
+			return false, fmt.Errorf("gateway,base filter,owner holds pex less than %d ", f.MinPexHold)
 		}
 
 	}

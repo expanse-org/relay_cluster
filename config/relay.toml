@@ -89,8 +89,8 @@ title = "miner"
 
 [gateway_filters]
     [gateway_filters.base_filter]
-        min_lrc_fee = 10
-        min_lrc_hold = 100
+        min_pex_fee = 10
+        min_pex_hold = 100
         max_price = 1000000000000
         min_split_percentage = 0.0
         max_split_percentage = 1.0

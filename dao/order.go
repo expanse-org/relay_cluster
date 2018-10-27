@@ -49,7 +49,7 @@ type Order struct {
 	CreateTime            int64   `gorm:"column:create_time;type:bigint"`
 	ValidSince            int64   `gorm:"column:valid_since;type:bigint"`
 	ValidUntil            int64   `gorm:"column:valid_until;type:bigint"`
-	LrcFee                string  `gorm:"column:lrc_fee;type:varchar(40)"`
+	PexFee                string  `gorm:"column:pex_fee;type:varchar(40)"`
 	BuyNoMoreThanAmountB  bool    `gorm:"column:buy_nomore_than_amountb"`
 	MarginSplitPercentage uint8   `gorm:"column:margin_split_percentage;type:tinyint(4)"`
 	V                     uint8   `gorm:"column:v;type:tinyint(4)"`
@@ -85,7 +85,7 @@ func (o *Order) ConvertDown(state *types.OrderState) error {
 	o.SplitAmountB = state.SplitAmountB.String()
 	o.CancelledAmountS = state.CancelledAmountS.String()
 	o.CancelledAmountB = state.CancelledAmountB.String()
-	o.LrcFee = src.LrcFee.String()
+	o.PexFee = src.PexFee.String()
 
 	o.Protocol = src.Protocol.Hex()
 	o.DelegateAddress = src.DelegateAddress.Hex()
@@ -131,7 +131,7 @@ func (o *Order) ConvertUp(state *types.OrderState) error {
 	state.SplitAmountB, _ = new(big.Int).SetString(o.SplitAmountB, 0)
 	state.CancelledAmountS, _ = new(big.Int).SetString(o.CancelledAmountS, 0)
 	state.CancelledAmountB, _ = new(big.Int).SetString(o.CancelledAmountB, 0)
-	state.RawOrder.LrcFee, _ = new(big.Int).SetString(o.LrcFee, 0)
+	state.RawOrder.PexFee, _ = new(big.Int).SetString(o.PexFee, 0)
 
 	state.RawOrder.Price = new(big.Rat).SetFloat64(o.Price)
 	state.RawOrder.Protocol = common.HexToAddress(o.Protocol)
@@ -482,7 +482,7 @@ func (s *RdsService) GetFrozenAmount(owner common.Address, token common.Address,
 	return list, err
 }
 
-func (s *RdsService) GetFrozenLrcFee(owner common.Address, statusSet []types.OrderStatus) ([]Order, error) {
+func (s *RdsService) GetFrozenPexFee(owner common.Address, statusSet []types.OrderStatus) ([]Order, error) {
 	var (
 		list []Order
 		err  error
@@ -490,7 +490,7 @@ func (s *RdsService) GetFrozenLrcFee(owner common.Address, statusSet []types.Ord
 
 	now := time.Now().Unix()
 	err = s.Db.Model(&Order{}).
-		Where("lrc_fee > 0 and owner = ? and status in "+buildStatusInSet(statusSet), owner.Hex()).
+		Where("pex_fee > 0 and owner = ? and status in "+buildStatusInSet(statusSet), owner.Hex()).
 		Where("valid_since < ?", now).
 		Where("valid_until >= ? ", now).
 		Find(&list).Error

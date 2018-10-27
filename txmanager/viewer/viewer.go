@@ -199,7 +199,7 @@ func getTransactionJsonResult(view *txtyp.TransactionView, entity *txtyp.Transac
 	case txtyp.TX_TYPE_SEND, txtyp.TX_TYPE_RECEIVE:
 		err = res.FromTransferEntity(entity)
 
-	case txtyp.TX_TYPE_SELL, txtyp.TX_TYPE_BUY, txtyp.TX_TYPE_LRC_FEE, txtyp.TX_TYPE_LRC_REWARD:
+	case txtyp.TX_TYPE_SELL, txtyp.TX_TYPE_BUY, txtyp.TX_TYPE_PEX_FEE, txtyp.TX_TYPE_PEX_REWARD:
 		err = res.FromFillEntity(entity)
 	}
 

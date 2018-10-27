@@ -50,15 +50,15 @@ func TestGlobalMarket_Sign(t *testing.T) {
 
 	req := market.GlobalTrendReq{}
 	req.TrendAnchor = "USDT"
-	//req.Symbol = "LRC"
+	//req.Symbol = "PEX"
 	//fmt.Println(g.Sign(req))
-	//fmt.Println(g.GetGlobalTicker("LRC"))
+	//fmt.Println(g.GetGlobalTicker("PEX"))
 	//fmt.Println("111112222")
 	//time.Sleep(50 * time.Second)
 	//fmt.Println("111112222333")
 	//fmt.Println(market.GM.GetGlobalMarketTickerCache(""))
-	//fmt.Println(market.GM.GetGlobalTickerCache("LRC"))
-	//fmt.Println(market.GM.GetGlobalTrendCache("LRC"))
+	//fmt.Println(market.GM.GetGlobalTickerCache("PEX"))
+	//fmt.Println(market.GM.GetGlobalTrendCache("PEX"))
 	fmt.Println(g.GetGlobalTicker("vite"))
 	//time.Sleep(30* time.Second)
 }

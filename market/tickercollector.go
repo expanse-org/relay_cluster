@@ -105,8 +105,8 @@ func (e *ExchangeImpl) updateCache() {
 
 func mockUpdateCache() {
 	tickers := make([]Ticker, 0)
-	t1 := Ticker{Market: "LRC-WEXP", Amount: 0.001}
-	t2 := Ticker{Market: "LRC-WEXP", Amount: 0.003}
+	t1 := Ticker{Market: "PEX-WEXP", Amount: 0.001}
+	t2 := Ticker{Market: "PEX-WEXP", Amount: 0.003}
 	t3 := Ticker{Market: "FOO-BAR", Amount: 0.002}
 	tickers = append(tickers, t1)
 	tickers = append(tickers, t2)

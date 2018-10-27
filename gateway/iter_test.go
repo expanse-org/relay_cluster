@@ -36,23 +36,23 @@ const (
 func TestRing(t *testing.T) {
 	entity := test.Entity()
 
-	lrc := util.AllTokens["LRC"].Protocol
+	pex := util.AllTokens["PEX"].Protocol
 	eth := util.AllTokens["WEXP"].Protocol
 
 	account1 := entity.Accounts[0]
 	account2 := entity.Accounts[1]
 
-	// 卖出0.1个eth， 买入300个lrc,lrcFee为20个lrc
+	// 卖出0.1个eth， 买入300个pex,pexFee为20个pex
 	amountS1, _ := new(big.Int).SetString("10"+suffix, 0)
 	amountB1, _ := new(big.Int).SetString("30000"+suffix, 0)
-	lrcFee1 := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(5)) // 20个lrc
-	test.CreateOrderState(eth, lrc, account1.Address, amountS1, amountB1, lrcFee1)
+	pexFee1 := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(5)) // 20个pex
+	test.CreateOrderState(eth, pex, account1.Address, amountS1, amountB1, pexFee1)
 
-	// 卖出1000个lrc,买入0.1个eth,lrcFee为20个lrc
+	// 卖出1000个pex,买入0.1个eth,pexFee为20个pex
 	amountS2, _ := new(big.Int).SetString("60000"+suffix, 0)
 	amountB2, _ := new(big.Int).SetString("10"+suffix, 0)
-	lrcFee2 := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(3))
-	test.CreateOrderState(lrc, eth, account2.Address, amountS2, amountB2, lrcFee2)
+	pexFee2 := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(3))
+	test.CreateOrderState(pex, eth, account2.Address, amountS2, amountB2, pexFee2)
 }
 
 func TestUnlockWallet(t *testing.T) {

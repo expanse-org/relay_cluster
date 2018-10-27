@@ -3,7 +3,7 @@
 [
   {
     "Protocol":"0xEF68e7C694F40c8202821eDF525dE3782458639f",
-    "Symbol":"LRC",
+    "Symbol":"PEX",
     "Source":"loopring",
     "Deny":false,
     "Decimals":18,

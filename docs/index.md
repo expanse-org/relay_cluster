@@ -65,8 +65,8 @@ Loopring Relay is an important part of Loopring’s technology and ecosystem. It
 | Order | AmountB | The number of tokens to buy |
 | Order | ValidSince | The effective time of the order, indicated by the timestamp on the order. If the current time is less than ValidSince, the order is not in effect. |
 | Order | ValidUntil | The expiration time of the order indicated by the timestamp on the order. If the time is greater than ValidUntil, the order will become invalid |
-| Order | LrcFee | Set LRC Fee for this order |
-| Order | buyNoMoreThanAmountB | Determines whether to allow the purchase of amountB of tokenB based on an excess amount. Say the current market price (LRC-WEXP) is .0001, and the user sets an order to buy 100 at .0002 (requiring 0.2 WEXP), if buyNoMoreThanAmountB = true, then the end user will buy 100 LRC at a price of .0001 (regardless of their intended gain) |
+| Order | LrcFee | Set PEX Fee for this order |
+| Order | buyNoMoreThanAmountB | Determines whether to allow the purchase of amountB of tokenB based on an excess amount. Say the current market price (PEX-WEXP) is .0001, and the user sets an order to buy 100 at .0002 (requiring 0.2 WEXP), if buyNoMoreThanAmountB = true, then the end user will buy 100 PEX at a price of .0001 (regardless of their intended gain) |
 | Order | marginSplitPercentage | The percentage used to pay for the completion and mining of the order, usually defaulting to 50% |
 | Order | v, r, s | To get the result of order signing, first you must generate OrderHash using the Keccak256 algorithm for part of the order, then do an ECDSA signature for a Hash and generate the result. |
 | Order | powNonce | We use proof of work when submitting an order, which limits excessive order submissions to prevent the order subsystem from being spammed. powNonce uses the workload proof algorithm calculation to verify if the nonce passes the proof of work, then the order is verified and submitted to the Relay. |
@@ -91,7 +91,7 @@ Loopring Relay is an important part of Loopring’s technology and ecosystem. It
 | General | Nonce | This is an incrementing integer starting from 1 that is equal to the current value of the total number of transactions submitted by the user. The nonce is needed for verification when a user is submitting a transaction, and each nonce can only have one transaction submitted for it. Since the Relay has access to a large number of Loopring wallets across multiple versions (web/ios/android), with multiple parties using them at the same time, using the centralized maintenance of nonce functionality will maximize transaction success.  |
 | General | Miner | Loopring’s ring miners identify order rings and submit them to the smart contract |
 | General | Decimal | Assuring ERC20 Token Unit accuracy. Generally, the number of Tokens in an order divided by the Decimal is the actual number, usually the Decimal=1e18. |
-| General | Symbol | Shorter version of the ERC20 Token name. For example, Loopring ERC20 Token is LRC. |
+| General | Symbol | Shorter version of the ERC20 Token name. For example, Loopring ERC20 Token is PEX. |
 
 ---
 

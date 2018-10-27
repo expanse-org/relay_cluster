@@ -36,7 +36,7 @@ var (
 	miner            = test.Entity().Creator
 	account1         = test.Entity().Accounts[0].Address
 	account2         = test.Entity().Accounts[1].Address
-	lrcTokenAddress  = util.AllTokens["LRC"].Protocol
+	pexTokenAddress  = util.AllTokens["PEX"].Protocol
 	wexpTokenAddress = util.AllTokens["WEXP"].Protocol
 	delegateAddress  = test.Delegate()
 	gas              = big.NewInt(200000)
@@ -135,7 +135,7 @@ func TestEthNodeAccessor_ERC20Transfer(t *testing.T) {
 	amount := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(150))
 
 	erc20abi := loopringaccessor.Erc20Abi()
-	tokenAddress := lrcTokenAddress
+	tokenAddress := pexTokenAddress
 	callMethod := accessor.ContractSendTransactionMethod("latest", erc20abi, tokenAddress)
 
 	hash, _, err := callMethod(from, "transfer", gas, gasPrice, nil, to, amount)
@@ -170,7 +170,7 @@ func TestEthNodeAccessor_ERC20Balance(t *testing.T) {
 func TestEthNodeAccessor_Approval(t *testing.T) {
 	accounts := []common.Address{account1, account2}
 	spender := delegateAddress
-	tokenAddress := lrcTokenAddress
+	tokenAddress := pexTokenAddress
 	amount := new(big.Int).Mul(big.NewInt(1e18), big.NewInt(1000000))
 	//amount,_ := big.NewInt(0).SetString("9223372036854775806000000000000000000", 0)
 
@@ -187,7 +187,7 @@ func TestEthNodeAccessor_Approval(t *testing.T) {
 
 func TestEthNodeAccessor_Allowance(t *testing.T) {
 	/*accounts := []common.Address{account1, account2}
-	tokens := []common.Address{lrcTokenAddress, wexpTokenAddress}*/
+	tokens := []common.Address{pexTokenAddress, wexpTokenAddress}*/
 	accounts := []common.Address{common.HexToAddress("0x750ad4351bb728cec7d639a9511f9d6488f1e259"), common.HexToAddress("0x251f3bd45b06a8b29cb6d171131e192c1254fec1")}
 	tokens := []common.Address{common.HexToAddress("0x639687b7f8501f174356d3acb1972f749021ccd0"), common.HexToAddress("0xe1C541BA900cbf212Bc830a5aaF88aB499931751")}
 
@@ -292,7 +292,7 @@ func TestEthNodeAccessor_GetCutoffAll(t *testing.T) {
 func TestEthNodeAccessor_CutoffPair(t *testing.T) {
 	account := common.HexToAddress("0xb1018949b241D76A1AB2094f473E9bEfeAbB5Ead")
 	cutoff := big.NewInt(1531107175)
-	token1 := lrcTokenAddress
+	token1 := pexTokenAddress
 	token2 := wexpTokenAddress
 
 	callMethod := accessor.ContractSendTransactionMethod("latest", test.LprAbi(), test.Protocol())
@@ -308,7 +308,7 @@ func TestEthNodeAccessor_CutoffPair(t *testing.T) {
 
 func TestEthNodeAccessor_GetCutoffPair(t *testing.T) {
 	owner := accounts.Account{Address: account2}
-	token1 := lrcTokenAddress
+	token1 := pexTokenAddress
 	token2 := wexpTokenAddress
 
 	var res types.Big
@@ -322,8 +322,8 @@ func TestEthNodeAccessor_GetCutoffPair(t *testing.T) {
 func TestEthNodeAccessor_TokenRegister(t *testing.T) {
 	account := accounts.Account{Address: test.Entity().Creator.Address}
 
-	address := lrcTokenAddress
-	symbol := "LRC"
+	address := pexTokenAddress
+	symbol := "PEX"
 
 	callMethod := accessor.ContractSendTransactionMethod("latest", test.TokenRegisterAbi(), test.TokenRegisterAddress())
 	if result, _, err := callMethod(account.Address, contract.METHOD_TOKEN_REGISTRY, gas, gasPrice, nil, address, symbol); nil != err {
@@ -336,8 +336,8 @@ func TestEthNodeAccessor_TokenRegister(t *testing.T) {
 func TestEthNodeAccessor_TokenUnRegister(t *testing.T) {
 	account := accounts.Account{Address: test.Entity().Creator.Address}
 
-	address := lrcTokenAddress
-	symbol := "LRC"
+	address := pexTokenAddress
+	symbol := "PEX"
 
 	callMethod := accessor.ContractSendTransactionMethod("latest", test.TokenRegisterAbi(), test.TokenRegisterAddress())
 	if result, _, err := callMethod(account.Address, contract.METHOD_TOKEN_UNREGISTRY, gas, gasPrice, nil, address, symbol); nil != err {
@@ -350,7 +350,7 @@ func TestEthNodeAccessor_TokenUnRegister(t *testing.T) {
 func TestEthNodeAccessor_IsTokenRegistried(t *testing.T) {
 	var result string
 
-	symbol := "LRC"
+	symbol := "PEX"
 
 	callMethod := accessor.ContractCallMethod(test.TokenRegisterAbi(), test.TokenRegisterAddress())
 	if err := callMethod(&result, "isTokenRegisteredBySymbol", "latest", symbol); nil != err {
@@ -362,7 +362,7 @@ func TestEthNodeAccessor_IsTokenRegistried(t *testing.T) {
 
 func TestEthNodeAccessor_GetAddressBySymbol(t *testing.T) {
 	var result string
-	symbol := "LRC"
+	symbol := "PEX"
 
 	callMethod := accessor.ContractCallMethod(test.TokenRegisterAbi(), test.TokenRegisterAddress())
 	if err := callMethod(&result, "getAddressBySymbol", "latest", symbol); err != nil {
@@ -410,7 +410,7 @@ func TestEthNodeAccessor_IsAddressAuthorized(t *testing.T) {
 }
 
 func TestEthNodeAccessor_TokenAddress(t *testing.T) {
-	symbol := "LRC"
+	symbol := "PEX"
 	protocol := test.Protocol()
 	tokenRegistryAddress := loopringaccessor.ProtocolAddresses()[protocol].TokenRegistryAddress
 	tokenRegisterAbi := loopringaccessor.TokenRegistryAbi()

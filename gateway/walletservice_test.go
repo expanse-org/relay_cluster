@@ -251,10 +251,10 @@ func TestGetPow(t *testing.T) {
 //	//priceQuoteMap := make(map[string]*big.Rat)
 //	//priceQuoteMap["WEXP"] = new(big.Rat).SetFloat64(4532.01)
 //	//priceQuoteMap["RDN"] = new(big.Rat).SetFloat64(12.01)
-//	//priceQuoteMap["LRC"] = new(big.Rat).SetFloat64(2.32)
+//	//priceQuoteMap["PEX"] = new(big.Rat).SetFloat64(2.32)
 //	//balances := make(map[string]market.Balance)
 //	//balances["WEXP"] = market.Balance{Token:"WEXP", Balance:types.HexToBigint("0x22")}
-//	//balances["LRC"] = market.Balance{Token:"LRC", Balance:types.HexToBigint("0x1")}
+//	//balances["PEX"] = market.Balance{Token:"PEX", Balance:types.HexToBigint("0x1")}
 //	//balances["RDN"] = market.Balance{Token:"RDN", Balance:types.HexToBigint("0x23")}
 //	//
 //	//totalAsset := big.NewRat(0, 1)
