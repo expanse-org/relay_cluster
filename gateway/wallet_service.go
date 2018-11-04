@@ -614,7 +614,8 @@ func (w *WalletServiceImpl) GetOldVersionWexpBalance(owner SingleOwner) (res str
 }
 
 func (w *WalletServiceImpl) SubmitOrder(order *types.OrderJsonRequest) (res string, err error) {
-
+	tempvar,_ := json.Marshal(order)
+	fmt.Println(string(tempvar))
 	if order.OrderType != types.ORDER_TYPE_MARKET && order.OrderType != types.ORDER_TYPE_P2P {
 		order.OrderType = types.ORDER_TYPE_MARKET
 	}

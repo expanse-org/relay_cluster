@@ -30,6 +30,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"math/big"
 	"strings"
+	"fmt"
 )
 
 const (
@@ -583,6 +584,7 @@ func (b *ChangedOfBlock) syncAndSaveBalances(ttl, ethTtl int64) (map[common.Addr
 	for _, balances := range accounts {
 		balances.save(ttl, ethTtl)
 		changedAddrs[balances.Owner] = true
+		fmt.Sprintf("%x", changedAddrs[balances.Owner])
 	}
 
 	return changedAddrs, nil

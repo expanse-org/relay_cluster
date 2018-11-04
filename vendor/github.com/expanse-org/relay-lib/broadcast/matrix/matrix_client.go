@@ -253,6 +253,7 @@ func (client *MatrixClient) WhoAmI() (string, error) {
 }
 
 func (client *MatrixClient) JoinRoom(roomid string) error {
+	fmt.Printf("------------------------------------------------------------------%s", roomid);
 	req := &JoinRoomReq{
 		RoomId: roomid,
 	}

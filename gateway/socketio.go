@@ -816,7 +816,9 @@ func (so *SocketIOServiceImpl) handleBalanceUpdate(input interface{}) (err error
 	if common.IsHexAddress(balanceUpdateEvent.DelegateAddress) {
 		so.notifyBalanceUpdateByDelegateAddress(balanceUpdateEvent.Owner, balanceUpdateEvent.DelegateAddress)
 	} else {
+
 		for k := range loopringaccessor.DelegateAddresses() {
+			fmt.Println("-------------------------------", balanceUpdateEvent.Owner, k.Hex())
 			so.notifyBalanceUpdateByDelegateAddress(balanceUpdateEvent.Owner, k.Hex())
 		}
 	}

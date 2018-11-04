@@ -25,7 +25,7 @@ import (
 	"github.com/expanse-org/relay-lib/log"
 	libTypes "github.com/expanse-org/relay-lib/types"
 )
-
+import "github.com/davecgh/go-spew/spew"
 // todo delete return after test
 
 func NotifyOrderUpdate(o *libTypes.OrderState) error {
@@ -72,6 +72,7 @@ func NotifyTransactionView(tx *types.TransactionView) error {
 }
 
 func NotifyAccountBalanceUpdate(event *libTypes.BalanceUpdateEvent) error {
+	spew.Dump("---------------------------------",event)
 	err := ProducerSocketIOMessage(kafka.Kafka_Topic_SocketIO_BalanceUpdated, event)
 	if err != nil {
 		log.Error("notify cutoff failed. " + event.Owner)
