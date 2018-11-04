@@ -6,3 +6,5 @@ Loopring Relay is an important part of Loopring’s technology and ecosystem. It
 
 ### Documentations
 For more information regarding this project, please checkout its [github pages](https://loopring.github.io/relay-cluster/index).
+
+### Use the canary branch.
